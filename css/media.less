@@ -1,0 +1,425 @@
+@import "_vars";
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+@media only screen and (max-width : 360px)  {
+	.popup-nav {
+		top: 0;
+		left: 0;
+		width: 296px;
+		padding-top: 60px;
+		background: @color_4;
+		&__list {
+			li {
+				font-size: 18.75px;
+				line-height: 35px;
+			}
+			&__item {
+				margin-bottom: 12px;
+				&--first {
+					margin-bottom: 24px;
+				}
+			}
+		}
+		&__sublist {
+			margin-top: 10px;
+			padding-left: 15px;
+			&__item {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	header.main-header {
+		background: fade(#0083b3, 83%);
+		height: 55px;
+		.top-line {
+			padding: 5px 10px;
+			&__link {
+				left: 0;
+				img {
+					width: 19px;
+					margin-right: 0;
+				}
+				span {
+					display: none;
+				}
+			}
+			&__logo {
+				position: relative;
+				top: 4px;
+				left: -70px;
+				align-self: center;
+				img {
+					max-width: 166px;
+				}
+			}
+			&__right {
+				align-self: center;
+				left: 0;
+				text-align: center;
+			}
+			&__login {
+				margin-right: 0;
+				img {
+					width: 18px;
+				}
+			}
+			&__lang {
+				bottom: 0;
+				span {
+					font-size: 15px;
+					line-height: 8.98px;
+				}
+				img {
+					width: 16px;
+				}
+			}
+		}
+	}
+	.main-page {
+		background: url('../img/bg-main-page(small).png');
+		.container {
+			h1 {
+				margin-top: 27px;
+				margin-bottom: 0;
+				font-size: 24.28px;
+				line-height: 30.44px;
+			}
+			.main-logo {
+				margin-top: 23px;
+			}
+			.block {
+				display: block;
+				max-width: 100%;
+				margin-top: 37px;
+				margin-right: 0;
+				margin-left: 0;
+				margin-bottom: 30px;
+				padding: 0;
+				background: transparent;
+				.box {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					max-height: 68px;
+					margin: 0;
+					padding: 11px 40px;
+					margin-bottom: 10px;
+					background: fade(@color_4, 80%);
+					-webkit-border-radius: 100px;
+					-moz-border-radius: 100px;
+					border-radius: 100px;
+					.img {
+						min-height: 0;
+					}
+					.p {
+						max-width: 40%;
+						p {
+							font-size: 16.68px;
+							line-height: 21.09px;
+						}
+					}
+					&:after {
+						top: 50%;
+						right: 50%;
+						height: 45px;
+						-webkit-transform: translate(-50%, -50%);
+						-moz-transform: translate(-50%, -50%);
+						-ms-transform: translate(-50%, -50%);
+						-o-transform: translate(-50%, -50%);
+						transform: translate(-50%, -50%);
+					}
+					&:last-child {
+						&:after {
+							display: block;
+						}
+					}
+				}
+				.box {
+					&:nth-child(1) {
+						.img {
+							width: 42px;
+							height: 46px;
+						}
+					}
+					&:nth-child(2) {
+						.img {
+							width: 71px;
+							height: 28px;
+						}
+					}
+					&:nth-child(3) {
+						.img {
+							width: 48px;
+							height: 47px;
+						}
+					}
+					&:nth-child(4) {
+						.img {
+							width: 64px;
+							height: 33px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.news-page {
+		background-size: 100% 152px;
+		.content {
+			margin-top: 72px;
+			padding-left: 8px;
+			padding-right: 8px;
+			.row {
+				main.page-center-column {
+					left: 0;
+					h1.heading {
+						left: 15px;
+						display: block;
+						width: 95%;
+						padding: 8px 26px;
+						margin-bottom: 0;
+						font-size: 15px;
+						line-height: 27.25px;
+					}
+					.news-line {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+	.box-pagination {
+		margin: 20px 0;
+	}
+	.filter {
+		top: 0;
+		margin-top: 15px;
+		.filter-column {
+			display: block;
+		}
+		label {
+			font-size: 13.24px;
+			line-height: 22.58px;
+		}
+		.select {
+			height: 15px;
+			margin-left: 0;
+			font-size: 13.24px;
+			line-height: 22.58px;
+			&-options {
+				width: 100px;
+				padding: 0;
+				text-align: center;
+			}
+		}
+		.select-styled::after {
+			top: 8px;
+			right: 60px;
+			border-width: 0 1px 1px 0;
+			padding: 2px;
+		}
+	}
+	nav.page-left-column {
+		display: none;
+	}
+	aside.page-right-column {
+		padding: 0;
+		.content-box {
+			width: 100%;
+			margin-bottom: 25px;
+			.add_block {
+				img.ad-image {
+					width: 100%;
+				}
+				.alert_news {
+					width: 230px;
+					height: 53px;
+					padding: 6px 0;
+					font-size: 15px;
+					line-height: 35px;
+					img {
+						top: 3px;
+					}
+					span {
+						margin: 0;
+					}
+				}
+			}
+			.small_box {
+				margin-bottom: 24px;
+				a {
+					width: 115px;
+					max-height: 103px;
+					overflow: hidden;
+				}
+				.text-part {
+					.title {
+						line-height: 21px;
+					}
+					.data {
+						margin-bottom: 0;
+						font-size: 14px;
+						line-height: 25px;
+					}
+				}
+			}
+			.tracing {
+				.learn_more::before {
+					width: 118px;
+					left: -125px;
+				}
+				&.blogs {
+					display: none;
+				}
+			}
+			.quiz {
+				.box {
+					img {
+						width: 100%;
+					}
+				}
+				&-option {
+
+				}
+			}
+		}
+		.heading {
+			max-width: 95%;
+			padding-left: 27px;
+			font-size: 15px;
+			line-height: 27.75px;
+		}
+	}
+	footer {
+		background: fade(#0083b3, 83%);
+		.container {
+			display: block;
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 20px;
+				li {
+					margin-right: 15px;
+					&:last-child {
+						margin-right: 0;
+					}
+					a {
+						font-size: 16.68px;
+						line-height: 44.65px;
+					}
+					&::after {
+						right: -10px;
+						height: 18px;
+						top: 12px;
+					}
+					&:nth-child(2n) {
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+			.links {
+				text-align: center;
+				.box {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					a {
+						margin-right: 10px;
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+				p {
+					font-size: 12.52px;
+					line-height: 29.73px;
+				}
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
+
+@media only screen and (max-width : 360px) {}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+
+// Адаптивная верстка
+@media screen and (max-width: 1366px), screen and (max-height: 900px) {
+	.main-page {
+		.container {
+			h1 {
+				padding-top: 3vw;
+			}
+			.main-logo {
+				width: 33% !important;
+				margin-top: 1.125em;
+			}
+		}
+		.block {
+			max-width: 70%;
+			margin-top: 5vh;
+			.box {
+				margin-top: 0;
+				.p {
+					font-size: 0.9vw;
+				}
+			}
+		}
+	}
+	footer {
+		.container {
+			ul {
+				li {
+					a {
+						font-size: 20px;
+					}
+				}
+			}
+			.links {
+				p {
+					font-size: 15px;
+					text-align: right;
+				}
+			}
+		}
+	}
+}

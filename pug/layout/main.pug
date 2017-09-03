@@ -1,0 +1,63 @@
+doctype html
+head
+	meta(charset='UTF-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	link(href='css/bootstrap.min.css', rel='stylesheet')
+	link(href='css/style.css', rel='stylesheet')
+	link(href='css/media.css', rel='stylesheet')
+
+	title
+		block title
+
+	body
+		section(class= page + "-page")
+			include ../modules/header
+			.container
+				.content
+					.row
+						if page != "main"
+							include ../modules/left-column
+						block content
+						if page != "main"
+							include ../modules/right-column
+			include ../modules/footer
+
+
+		// Модальное окно
+		#popupModal.popup-modal
+			button#closeModal.popup-modal__close
+			form.popup-modal__form(action='#')
+				h3.popup-modal__form__title Вхід
+				.popup-modal__form__input
+					label(for='user-mail') Пошта
+					input#user-mail(name='u-mail', type='email', required='')
+				.popup-modal__form__input
+					label(for='user-password') Пароль
+					input#user-password(name='u-password', type='password', required='')
+				.popup-modal__form__remember
+					input#remember-check(name='remember-me', type='checkbox')
+					label(for='remember-check') Запам'ятати мене
+					a(href='javasrcipt:void(0);') Забули пароль?
+				button.popup-modal__form__btn Увійти
+			.popup-modal__social
+				b.popup-modal__title Увійти за допомогою
+				.popup-modal__social__links
+					a.popup-modal__social__link.popup-modal__social__link--rss(href='javasrcipt:void(0);') RSS
+					a.popup-modal__social__link.popup-modal__social__link--fb(href='javasrcipt:void(0);') Facebook
+					a.popup-modal__social__link.popup-modal__social__link--tw(href='javasrcipt:void(0);') Twitter
+					a.popup-modal__social__link.popup-modal__social__link--google(href='javasrcipt:void(0);') Google+
+					a.popup-modal__social__link.popup-modal__social__link--youtube(href='javasrcipt:void(0);') Youtube
+			.popup-modal__register
+				b.popup-modal__title Немає облікового запису?
+				a.popup-modal__register__link(href='javasrcipt:void(0);') Реєстрація
+				p
+					| Натискаючи на кнопку входу через соцмережу, ви приймаєте
+					a(href='javasrcipt:void(0);') Умови угоди
+		// Подложка модального окна
+		#popupOverlay.popup-overlay
+
+
+		// Загрузка скриптов
+		script(src='js/jquery-3.2.1.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/main.min.js')

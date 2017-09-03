@@ -1,0 +1,95 @@
+extends pug/layout/main
+
+block title
+	| Опитування
+
+	- var page = "quiz"
+
+block content
+	// Основной контент
+	main.page-center-column.col-lg-6
+		h1.heading Опитування
+		.news-line
+			.box.last
+				h2.title
+					| Чи потрібно ввести кримінальну відповідальність для українских артистів за виступи в росії?
+				.box-body
+					iframe(height='300', src='https://www.youtube.com/embed/mmVCm4OkkZk', allowfullscreen='')
+					.quiz-form.form
+						.quiz-form-head
+							p Варіанти відповіді:
+							p.votes
+								span.vote-number 908
+								|  голосів, відкрите
+						form(action='#', method='post')
+							.quiz-form-input
+								input#quiz-yes(name='quiz-question', type='radio', value='yes')
+								label(for='quiz-yes') Так
+							.quiz-form-input
+								input#quiz-no(name='quiz-question', type='radio', value='no', checked='')
+								label(for='quiz-no') Ні
+							.quiz-form-input
+								input#quiz-other(name='quiz-question', type='radio', value='other')
+								label(for='quiz-other') Інша думка
+							button.quiz-form-btn(type='submit') Голосувати
+			.box-socials
+				a.box-link.box-link-fb(href='javascript:void(0);')
+				a.box-link.box-link-tweet(href='javascript:void(0);')
+				a.box-link.box-link-comment(href='javascript:void(0);')
+					span Коментувати
+					span.box-link-number 203
+			.box.last
+				h2.title
+					| Чи потрібно ввести кримінальну відповідальність для українских артистів за виступи в росії?
+				.box-body
+					iframe(height='300', src='https://www.youtube.com/embed/mmVCm4OkkZk', allowfullscreen='')
+					.quiz-form.form
+						.quiz-form-head
+							p Варіанти відповіді:
+							p.votes
+								span.vote-number 908
+								|  голосів, відкрите
+						form(action='#', method='post')
+							.quiz-form-input
+								input#quiz-yes(name='quiz-question', type='radio', value='yes')
+								label(for='quiz-yes') Так
+							.quiz-form-input
+								input#quiz-no(name='quiz-question', type='radio', value='no', checked='')
+								label(for='quiz-no') Ні
+							.quiz-form-input
+								input#quiz-other(name='quiz-question', type='radio', value='other')
+								label(for='quiz-other') Інша думка
+							button.quiz-form-btn(type='submit') Голосувати
+			.box-socials
+				a.box-link.box-link-fb(href='javascript:void(0);')
+				a.box-link.box-link-tweet(href='javascript:void(0);')
+				a.box-link.box-link-comment(href='javascript:void(0);')
+					span Коментувати
+					span.box-link-number 203
+			.box.last
+				h2.title
+					| Чи потрібно ввести кримінальну відповідальність для українских артистів за виступи в росії?
+				.box-body
+					iframe(height='300', src='https://www.youtube.com/embed/mmVCm4OkkZk', allowfullscreen='')
+					.quiz-results.form
+						.quiz-form-head
+							p Результати опитування:
+							p.votes
+								span.vote-number 908
+								|  голосів, відкрите
+						.quiz-results-blocks
+							.quiz-results-block
+								span.vote.vote-yes Так
+								span.vote-percent 0%
+							.quiz-results-block
+								span.vote.vote-no Ні
+								span.vote-percent 0%
+							.quiz-results-block.quiz-results-block--highlight
+								span.vote.vote-other Інша думка
+								span.vote-percent 100%
+			.box-socials
+				a.box-link.box-link-fb(href='javascript:void(0);')
+				a.box-link.box-link-tweet(href='javascript:void(0);')
+				a.box-link.box-link-comment(href='javascript:void(0);')
+					span Коментувати
+					span.box-link-number 203

@@ -1,595 +1,348 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <title>Шукаю свідків
+  </title>
+  <body>
+    <section class="search-advert-page">
+      <!-- Основная шапка-->
+      <header class="main-header">
+        <div class="container">
+          <div class="row top-line">
+            <div class="col-3"><a class="top-line__link" id="topNavLink" href="javasrcipt:void(0);"><img src="img/icons/menu.png" width="33" height="23" alt="Sandwich menu icon"><span>Розділи</span></a>
+              <!-- Всплывающее меню-->
+              <nav class="popup-nav" id="topNav">
+                <ul class="popup-nav__list">
+                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="about.html">Про нас</a></li>
+                  <li class="popup-nav__list__item"><a href="news.html">Стрічка новин</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">злочини</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">дтп</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">хабарі</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">коментарі</a></li>
+                    </ul>
+                  </li>
+                  <li class="popup-nav__list__item"><a href="javasrcipt:void(0);">телеканал чп.інфо</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
+                      <li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
+                    </ul>
+                  </li>
+                  <li class="popup-nav__list__item"><a href="radio.html">Радіо магнолія</a></li>
+                  <li class="popup-nav__list__item"><a href="experts.html">Думка експертів</a></li>
+                  <li class="popup-nav__list__item"><a href="interactive.html">ІНТЕРАКТИВ</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="socials.html">Соціальні мережі</a></li>
+                      <li class="popup-nav__sublist__item"><a href="blog.html">Блоги</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search.html">"Шукаю свідків!"</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search-advert.html">опитування</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search-inner.html">написати листа</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3 top-line__logo"><a href="index.html"><img src="img/header-logo.png" width="315" height="32" alt="Header logo"></a></div>
+            <div class="col-3 top-line__right"><a class="top-line__login" id="topPopupModalLink" href="javasrcipt:void(0);"><img src="img/icons/languagr-img.png" width="28" height="24" alt="User icon"></a>
+              <div class="top-line__lang" id="topLangLink"><span>Укр</span><img src="img/icons/country.png" width="20" height="14" alt="Country flag">
+                <ul class="top-line__lang__list" id="custom_options">
+                  <li data-value="">УКР</li>
+                  <li data-value="1">EN</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            <!-- Левая колонка-->
+            <nav class="page-left-column col-lg-3">
+              <ul>
+                <li class="main"><a href="news.html">СТРІЧКА НОВИН</a></li>
+                <li><a href="news-feed.html">ПРАВОЗАХИСТ</a></li>
+                <li><a href="news-feed.html">ПОДІЇ</a></li>
+                <li><a href="news-feed.html">ЗЛОЧИНИ</a></li>
+                <li><a href="news-feed.html">ДТП</a></li>
+                <li><a href="news-feed.html">ХАБАРІ</a></li>
+                <li><a href="news-feed.html">КОМЕНТАРІ</a></li>
+              </ul>
+              <ul>
+                <li class="main"><a href="online.html">ТЕЛЕКАНАЛ ЧП.ІНФО</a></li>
+                <li><a href="news-video.html">ВІДЕОНОВИНИ</a></li>
+                <li><a href="news-video.html">СПЕЦРЕПОРТАЖ</a></li>
+                <li><a href="news-video.html">ІНТЕРВЬЮ</a></li>
+                <li><a href="news-video.html">ВІДКРИТИМ ТЕКСТОМ</a></li>
+                <li><a href="online.html">онлайн трансляція</a></li>
+              </ul>
+              <ul class="alone">
+                <li class="main"><a href="radio.html">РАДІО МАГНОЛІЯ</a></li>
+              </ul>
+              <ul class="alone">
+                <li class="main"><a href="experts.html">ДУМКА ЕКСПЕРТА</a></li>
+              </ul>
+              <ul>
+                <li class="main"><a href="interactive.html">ІНТЕРАКТИВ</a></li>
+                <li><a href="socials.html">СОЦІАЛЬНІ МЕРЕЖІ</a></li>
+                <li><a href="blog.html">БЛОГИ</a></li>
+                <li><a href="search.html">«ШУКАЮ СВІДКІВ!»</a></li>
+                <li><a href="search-inner.html">ОПИТУВАННЯ</a></li>
+                <li><a href="search-advert.html">НАПИСАТИ ЛИСТА</a></li>
+              </ul>
+              <div class="search-box">
+                <form action="#" method="post">
+                  <div class="search">
+                    <input type="text" placeholder="Поиск">
+                    <button class="search-submit-btn" type="submit"></button>
+                  </div>
+                </form>
+                <div class="box-links"><a href="javascript:void(0);"><img src="img/icons/rss_blue.png" width="21" height="21" alt="Иконка RSS"></a><a href="javascript:void(0);"><img src="img/icons/facebook_blue.png" width="13" height="23" alt="Иконка Facebook"></a><a href="javascript:void(0);"><img src="img/icons/tweet_blue.png" width="25" height="21" alt="Иконка Twitter"></a><a href="javascript:void(0);"><img src="img/icons/google_blue.png" width="33" height="20" alt="Иконка Google Plus"></a><a href="javascript:void(0);"><img src="img/icons/youtube_blue.png" width="53" height="24" alt="Иконка YouTube"></a></div>
+              </div>
+            </nav>
+            <!-- Основной контент-->
+            <main class="page-center-column col-lg-6">
+              <h1 class="heading">ШУКАЮ СВІДКІВ</h1>
+              <div class="news-line">
+                <div class="box">
+                  <h2 class="title">Подати оголошення в проект «ШУКАЮ СВІДКІВ!»</h2>
+                  <div class="box-head">
+                    <time datetime="2017-07-07T17:30">07.07.2017 17:30</time>
+                    <div class="box-head-more"><span class="box-head-watch">250</span><span class="box-head-comment">0</span></div>
+                  </div>
+                  <div class="box-body">
+                    <div class="image-block"></div>
+                    <div class="text-content">
+                      <p>Проект «ШУКАЮ СВІДКІВ!» створено для тих, хто потрапив у біду (зниклі безвісті, ДТП, підпал, угон, крадіжка майна, тяжкі злочинів проти життя і здоров´я людини, ) і кому для встановлення істини конче потрібна допомога свідків події.<br>                   Залиште інформацію про вашу подію на сайті - можливо свідки теж вас шукають!</p><span class="alert-text">Розміщення оголошення безкоштовне.</span>
+                      <p>Для публікації оголошення вам потрібно ознайомитись з<a href="#">Правила подачі оголошення</a>, уважно заповнити<a href="#">Форма оголошення</a> та натиснути «Публікувати».</p>
+                      <p>
+                        Після розгляду Адміністрацією сайту ваше оголошення буде розміщене на сторінці Проекту.
+                        Термін розміщення оголошення – 1 календарний місяць з моменту публікації. Після закінчення терміну розміщення оголошення буде видалено.
+                      </p>
+                      <p>У разі потреби оголошення можна опублікувати ще раз, знов заповнивши Форму оголошення</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box box-rules">
+                  <h2 class="title">Правила подачі оголошення</h2>
+                  <div class="box-body">
+                    <div class="text-content">
+                      <p>Забороняється:<br>                   набирати оголошення ЗАГОЛОВНИМИ літерами;<br>                   використовувати в тексті оголошення символи або літери, що не мають відношення до змісту оголошення;<br>                   реклама та антиреклама продуктів та послуг;<br>                   Не розміщуються оголошення:<br>                   що суперечать законам України;<br>                   наклепницького змісту, такі, що ображають релігійні та політичні погляди, або порушують расову та гендерну рівність;<br>                   Адміністрація сайту залишає за собою право на:<br>                   редагування тексту оголошення;<br>                   зміни категорії оголошення;<br>                   видалення оголошень без пояснення причин.<br>                   Адміністрація сайту не несе відповідальності:<br>                   за достовірність оголошень;<br>                   за зміст оголошень;<br>                   за можливий заподіяний збиток або обман.<br>                   У випадку пред'явлення Адміністрації сайту претензій зі сторони третіх осіб у зв'язку з інформацією, яка розміщується Автором оголошення на сайті (в тому числі і претензії зі сторони власників авторських прав та/або суміжних прав, їх уповноважених представників чи третіх осіб), Автор оголошення зобов'язаний самостійно і за власний рахунок врегульовувати і вирішувати всі спори з особами, що подали претензії, а також відшкодувати понесені Адміністрацією сайта збитки у повному обсязі.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box last box-form">
+                  <div class="news-line-form">
+                    <h2 class="title">Форма оголошення</h2>
+                    <form action="#">
+                      <div class="news-line-form-block">
+                        <label for="user-name">Ім'я</label>
+                        <input id="user-name" name="usr-name" type="text" required="">
+                      </div>
+                      <div class="news-line-form-block">
+                        <label for="user-email">E-mail</label>
+                        <input id="user-email" name="usr-email" type="email" required="">
+                      </div>
+                      <div class="news-line-form-block">
+                        <label for="user-phone">Контактний телефон</label>
+                        <input id="user-phone" name="usr-name" type="text" required="">
+                      </div>
+                      <div class="news-line-form-block">
+                        <table class="select-table">
+                          <tbody class="select-table-body">
+                            <tr>
+                              <td>
+                                <input id="event-1" type="radio" name="event" value="category-event">
+                                <label for="event-1">Категорія події</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr class="highlight">
+                              <td>
+                                <input id="event-2" type="radio" name="event" value="date-event">
+                                <label for="event-2">Дата події</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="event-3" type="radio" name="event" value="hour-event">
+                                <label for="event-3">Час події</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr class="highlight">
+                              <td>
+                                <input id="event-4" type="radio" name="event" value="region-event">
+                                <label for="event-4">Область</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="event-5" type="radio" name="event" value="locality-event">
+                                <label for="event-5">Населений пункт</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr class="highlight">
+                              <td>
+                                <input id="event-6" type="radio" name="event" value="street-event">
+                                <label for="event-6">Вулиця</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input id="event-7" type="radio" name="event" value="track-event">
+                                <label for="event-7">Траса</label>
+                              </td>
+                              <td>Вибрати</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="news-line-form-block news-line-form-block--last">
+                        <label for="user-message">Текст оголошення:</label>
+                        <textarea id="user-message" name="usr-message"></textarea>
+                      </div>
+                      <div class="news-line-form-block news-line-form-block--last">
+                        <input id="file-upload" type="file">
+                        <label class="small-link" for="file-upload">Додати фото</label>
+                      </div>
+                      <div class="news-line-form-block news-line-form-block--last"><a class="small-link" href="#">Перегляд оголошення</a></div>
+                      <div class="news-line-form-block news-line-form-block--last">
+                        <div class="radio-buttons">
+                          <input id="q-yes" name="question" type="radio" value="yes" checked="">
+                          <label for="q-yes">Так</label>
+                          <input id="q-no" name="question" type="radio" value="no">
+                          <label for="q-no">Ні</label>
+                        </div>
+                        <p class="text">Згоден з<a class="small-link" href="#">Правила подачі оголошення</a></p>
+                      </div>
+                      <div class="news-line-form-block news-line-form-block--captcha">
+                        <label for="user-captcha">Введіть код</label>
+                        <div class="captcha-img"><img src="img/captcha.jpg" width="264" height="73" alt="Captcha image"></div>
+                        <input id="user-captcha" name="usr-captcha" type="text" required="">
+                      </div>
+                      <button type="submit">Опублікувати оголошення</button>
+                    </form>
+                  </div>
+                  <div class="box-socials"><a class="box-link box-link-fb" href="javascript:void(0);"></a><a class="box-link box-link-tweet" href="javascript:void(0);"></a><a class="box-link box-link-comment" href="javascript:void(0);"><span>Коментувати</span><span class="box-link-number">203</span></a></div>
+                </div>
+                <p class="news-line-join">Приєднуйтесь до "Магнолія-ТВ" на Facebook!</p>
+                <div class="news-line-tags"><span>Теги:</span><a href="javascript:void(0);">Оголошення</a><a href="javascript:void(0);">Подати оголошення</a><a href="javascript:void(0);">Шукаю свідків</a></div>
+                <div class="news-line-stuff"><span>За матеріалами:</span><a href="javascript:void(0);">Магнолія-ТВ</a></div>
+                <div class="primary-breadcrumbs">
+                  <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="news.html">Шукаю свідків</a></li>
+                    <li class="active"><span>Подати оголошення</span></li>
+                  </ul>
+                </div>
+              </div>
+            </main>
+            <!-- Правая колонка-->
+            <aside class="page-right-column col-lg-3">
+              <div class="content-box">
+                <div class="add_block"><a href="javascript:void(0);"><img src="img/sidebar/ad(1).png" width="300" height="250" alt="Рекламный блок"></a><a class="alert_news" href="javascript:void(0);"><img src="img/icons/alert_news.png" width="23" height="18" alt="Иконка громофона"><span>Повідомити новину</span></a><a href="javascript:void(0);"><img class="add" src="img/sidebar/ad(2).png" width="300" height="250" alt="Рекламный блок"></a></div>
+                <div class="tracing">
+                  <p class="heading">СЛУЖБА РОЗШУКУ ДІТЕЙ</p>
+                  <div class="small_box"><a href="news-photo.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part"><a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
+                      <p class="data">06.07.2017 17:30</p>
+                    </div>
+                  </div>
+                  <div class="small_box"><a href="news-photo.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part"><a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
+                      <p class="data">06.07.2017 17:30</p>
+                    </div>
+                  </div>
+                  <div class="small_box"><a href="news-photo.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part"><a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
+                      <p class="data">06.07.2017 17:30</p>
+                    </div>
+                  </div><a class="learn_more" href="news-feed.html">Більше</a>
+                </div>
+                <div class="tracing expert-mind">
+                  <p class="heading">Думка експертів</p>
+                  <div class="small_box"><a href="experts.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part">
+                      <p class="title">Валентин Гладких Кандидат філософських наук</p><a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
+                    </div>
+                  </div>
+                  <div class="small_box"><a href="experts.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part">
+                      <p class="title">Валентин Гладких Кандидат філософських наук</p><a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
+                    </div>
+                  </div>
+                  <div class="small_box"><a href="experts.html"><img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости"></a>
+                    <div class="text-part">
+                      <p class="title">Валентин Гладких Кандидат філософських наук</p><a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
+                    </div>
+                  </div><a class="learn_more" href="javascript:void(0);">Більше</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <!-- Основной подвал-->
+      <footer>
+        <div class="container">
+          <ul>
+            <li><a href="javascript:void(0);">Про нас</a></li>
+            <li><a href="javascript:void(0);">Контакти</a></li>
+            <li><a href="javascript:void(0);">Правила користування сайтом</a></li>
+            <li><a href="javascript:void(0);">Карта сайту</a></li>
+          </ul>
+          <div class="links">
+            <div class="box"><a href="javascript:void(0);"><img src="img/icons/rss.png" width="21" height="21" alt="RSS иконка"></a><a href="javascript:void(0);"><img src="img/icons/facebook.png" width="13" height="23" alt="Facebook иконка"></a><a href="javascript:void(0);"><img src="img/icons/twet.png" width="25" height="21" alt="Tweeter иконка"></a><a href="javascript:void(0);"><img src="img/icons/google.png" width="33" height="20" alt="Google иконка"></a><a href="javascript:void(0);"><img src="img/icons/youtube.png" width="53" height="24" alt="Youtube иконка"></a></div>
+            <p>Всі права захищені © Магнолія-ТВ</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Модальное окно-->
+    <div class="popup-modal" id="popupModal">
+      <button class="popup-modal__close" id="closeModal"></button>
+      <form class="popup-modal__form" action="#">
+        <h3 class="popup-modal__form__title">Вхід</h3>
+        <div class="popup-modal__form__input">
+          <label for="user-mail">Пошта</label>
+          <input id="user-mail" name="u-mail" type="email" required="">
+        </div>
+        <div class="popup-modal__form__input">
+          <label for="user-password">Пароль</label>
+          <input id="user-password" name="u-password" type="password" required="">
+        </div>
+        <div class="popup-modal__form__remember">
+          <input id="remember-check" name="remember-me" type="checkbox">
+          <label for="remember-check">Запам'ятати мене</label><a href="javasrcipt:void(0);">Забули пароль?</a>
+        </div>
+        <button class="popup-modal__form__btn">Увійти</button>
+      </form>
+      <div class="popup-modal__social"><b class="popup-modal__title">Увійти за допомогою</b>
+        <div class="popup-modal__social__links"><a class="popup-modal__social__link popup-modal__social__link--rss" href="javasrcipt:void(0);">RSS</a><a class="popup-modal__social__link popup-modal__social__link--fb" href="javasrcipt:void(0);">Facebook</a><a class="popup-modal__social__link popup-modal__social__link--tw" href="javasrcipt:void(0);">Twitter</a><a class="popup-modal__social__link popup-modal__social__link--google" href="javasrcipt:void(0);">Google+</a><a class="popup-modal__social__link popup-modal__social__link--youtube" href="javasrcipt:void(0);">Youtube</a></div>
+      </div>
+      <div class="popup-modal__register"><b class="popup-modal__title">Немає облікового запису?</b><a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
+        <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте<a href="javasrcipt:void(0);">Умови угоди</a></p>
+      </div>
+    </div>
+    <!-- Подложка модального окна-->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <!-- Загрузка скриптов-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
 </head>
-
-<body>
-
-<section class="search-advert-page">
-	
-	<!-- Основная шапка -->
-	<header class="main-header">
-		<div class="container">
-			<div class="row top-line">
-				
-				<div class="col-lg-3">
-					<a id="topNavLink" class="top-line__link" href="javasrcipt:void(0);">
-						<img src="img/icons/menu.png" width="33" height="23" alt="Sandwich menu icon">
-						&nbsp;
-						<span>Розділи</span>
-					</a>
-
-					<!-- Всплывающее меню -->
-					<nav id="topNav" class="popup-nav">
-						<ul class="popup-nav__list">
-							<li class="popup-nav__list__item popup-nav__list__item--first"><a href="about.html">Про нас</a></li>
-
-							<li class="popup-nav__list__item">
-								<a href="news.html">Стрічка новин</a>
-								<ul class="popup-nav__sublist">
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">злочини</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">дтп</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">хабарі</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-feed.html">коментарі</a></li>
-								</ul>
-							</li>
-
-							<li class="popup-nav__list__item">
-								<a href="javasrcipt:void(0);">телеканал чп.інфо</a>
-								<ul class="popup-nav__sublist">
-									<li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
-									<li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
-									<li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
-								</ul>
-							</li>
-
-							<li class="popup-nav__list__item"><a href="radio.html">Радіо магнолія</a></li>
-
-							<li class="popup-nav__list__item"><a href="experts.html">Думка експертів</a></li>
-
-							<li class="popup-nav__list__item">
-								<a href="interactive.html">ІНТЕРАКТИВ</a>
-								<ul class="popup-nav__sublist">
-									<li class="popup-nav__sublist__item"><a href="socials.html">Соціальні мережі</a></li>
-									<li class="popup-nav__sublist__item"><a href="blog.html">Блоги</a></li>
-									<li class="popup-nav__sublist__item"><a href="search.html">"Шукаю свідків!"</a></li>
-									<li class="popup-nav__sublist__item"><a href="search-advert.html">опитування</a></li>
-									<li class="popup-nav__sublist__item"><a href="search-inner.html">написати листа</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				
-				<div class="col-lg-3 top-line__logo">
-					<a href="index.html"><img src="img/header-logo.png" width="315" height="32" alt="Header logo"></a>
-				</div>
-				
-				<div class="col-lg-3 top-line__right">
-					<a id="topPopupModalLink" class="top-line__login" href="javasrcipt:void(0);">
-						<img src="img/icons/languagr-img.png" width="28" height="24" alt="User icon">
-					</a>
-					
-					<div id="topLangLink" class="top-line__lang">
-						<span>Укр</span>
-						<img src="img/icons/country.png" width="20" height="14" alt="Country flag">
-						
-						<ul id="custom_options" class="top-line__lang__list">
-							<li data-value="">УКР</li>
-							<li data-value="1">EN</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	<!-- Контентная часть -->
-	<div class="container">
-		<div class="content">
-			<div class="row">
-
-				<!-- Левая колонка -->
-				<nav class="page-left-column col-lg-3">
-					<ul>
-						<li class="main">
-							<a href="news.html">СТРІЧКА НОВИН</a>
-						</li>
-						<li>
-							<a href="news-feed.html">ПРАВОЗАХИСТ</a>
-						</li>
-						<li>
-							<a href="news-feed.html">ПОДІЇ</a>
-						</li>
-						<li>
-							<a href="news-feed.html">ЗЛОЧИНИ</a>
-						</li>
-						<li>
-							<a href="news-feed.html">ДТП</a>
-						</li>
-						<li>
-							<a href="news-feed.html">ХАБАРІ</a>
-						</li>
-						<li>
-							<a href="news-feed.html">КОМЕНТАРІ </a>
-						</li>
-					</ul>
-					<ul>
-						<li class="main">
-							<a href="online.html">ТЕЛЕКАНАЛ ЧП.ІНФО</a>
-						</li>
-						<li>
-							<a href="news-video.html">ВІДЕОНОВИНИ</a>
-						</li>
-						<li>
-							<a href="news-video.html">СПЕЦРЕПОРТАЖ</a>
-						</li>
-						<li>
-							<a href="news-video.html">ІНТЕРВЬЮ</a>
-						</li>
-						<li>
-							<a href="news-video.html">ВІДКРИТИМ ТЕКСТОМ</a>
-						</li>
-						<li>
-							<a href="online.html">онлайн трансляція</a>
-						</li>
-					</ul>
-					<ul class="alone">
-						<li class="main">
-							<a href="radio.html">РАДІО МАГНОЛІЯ</a>
-						</li>
-					</ul>
-					<ul class="alone">
-						<li class="main">
-							<a href="experts.html">ДУМКА ЕКСПЕРТА</a>
-						</li>
-					</ul>
-
-					<ul>
-						<li class="main">
-							<a href="interactive.html">ІНТЕРАКТИВ</a>
-						</li>
-						<li>
-							<a href="socials.html">СОЦІАЛЬНІ МЕРЕЖІ</a>
-						</li>
-						<li>
-							<a href="blog.html">БЛОГИ</a>
-						</li>
-						<li>
-							<a href="search.html">«ШУКАЮ СВІДКІВ!»</a>
-						</li>
-						<li>
-							<a href="search-inner.html">ОПИТУВАННЯ</a>
-						</li>
-						<li>
-							<a href="search-advert.html">НАПИСАТИ ЛИСТА</a>
-						</li>
-					</ul>
-					<div class="search-box">
-						<form action="#" method="post">
-							<div class="search">
-								<input type="text" placeholder="Поиск">
-								<button class="search-submit-btn" type="submit"></button>
-							</div>
-						</form>
-
-						<div class="box-links">
-							<a href="javascript:void(0);">
-								<img src="img/icons/rss_blue.png" width="21" height="21" alt="Иконка RSS">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/facebook_blue.png" width="13" height="23" alt="Иконка Facebook">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/tweet_blue.png" width="25" height="21" alt="Иконка Twitter">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/google_blue.png" width="33" height="20" alt="Иконка Google Plus">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/youtube_blue.png" width="53" height="24" alt="Иконка YouTube">
-							</a>
-						</div>
-					</div>
-				</nav>
-				
-				<!-- Основной контент -->
-				<main class="page-center-column col-lg-6">
-					<h1 class="heading">ШУКАЮ СВІДКІВ</h1>
-					
-					<div class="news-line">
-						
-						<div class="box">
-							<h2 class="title">Подати оголошення в проект «ШУКАЮ СВІДКІВ!»</h2>
-							<div class="box-head">
-								<time datetime="2017-07-07T17:30">07.07.2017 17:30</time>
-								<div class="box-head-more">
-									<span class="box-head-watch">250</span>
-									<span class="box-head-comment">0</span>
-								</div>
-							</div>
-							
-							<div class="box-body">
-								<div class="image-block"></div>
-								<div class="text-content">
-									<p>
-										Проект «ШУКАЮ СВІДКІВ!» створено для тих, хто потрапив у біду (зниклі безвісті, ДТП, підпал, угон, крадіжка майна, тяжкі злочинів проти життя і здоров´я людини, ) і кому для встановлення істини конче потрібна допомога свідків події.
-										<br>
-										Залиште інформацію про вашу подію на сайті - можливо свідки теж вас шукають!
-									</p>
-									<span class="alert-text">Розміщення оголошення безкоштовне.</span>
-									<p>Для публікації оголошення вам потрібно ознайомитись з <a href="#">Правила подачі оголошення</a>, уважно заповнити
-										<a href="#">Форма оголошення</a> та натиснути «Публікувати».</p>
-									<p>Після розгляду Адміністрацією сайту ваше оголошення буде розміщене на сторінці Проекту.
-										Термін розміщення оголошення – 1 календарний місяць з моменту публікації. Після закінчення терміну розміщення оголошення буде видалено.</p>
-									<p>У разі потреби оголошення можна опублікувати ще раз, знов заповнивши Форму оголошення </p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="box box-rules">
-							<h2 class="title">Правила подачі оголошення</h2>
-							<div class="box-body">
-								<div class="text-content">
-									<p>
-										Забороняється: <br>
-										набирати оголошення ЗАГОЛОВНИМИ літерами; <br>
-										використовувати в тексті оголошення символи або літери, що не мають відношення до змісту оголошення; <br>
-										реклама та антиреклама продуктів та послуг; <br>
-										Не розміщуються оголошення: <br>
-										що суперечать законам України; <br>
-										наклепницького змісту, такі, що ображають релігійні та політичні погляди, або порушують расову та гендерну рівність; <br>
-										Адміністрація сайту залишає за собою право на: <br>
-										редагування тексту оголошення; <br>
-										зміни категорії оголошення; <br>
-										видалення оголошень без пояснення причин. <br>
-										Адміністрація сайту не несе відповідальності: <br>
-										за достовірність оголошень; <br>
-										за зміст оголошень; <br>
-										за можливий заподіяний збиток або обман. <br>
-										У випадку пред'явлення Адміністрації сайту претензій зі сторони третіх осіб у зв'язку з інформацією, яка розміщується Автором оголошення на сайті (в тому числі і претензії зі сторони власників авторських прав та/або суміжних прав, їх уповноважених представників чи третіх осіб), Автор оголошення зобов'язаний самостійно і за власний рахунок врегульовувати і вирішувати всі спори з особами, що подали претензії, а також відшкодувати понесені Адміністрацією сайта збитки у повному обсязі.
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="box last box-form">
-							
-							<div class="news-line-form">
-								<h2 class="title">Форма оголошення</h2>
-								<form action="#" action="post">
-									<div class="news-line-form-block">
-										<label for="user-name">Ім'я</label>
-										<input id="user-name" name="usr-name" type="text" required>
-									</div>
-									
-									<div class="news-line-form-block">
-										<label for="user-email">E-mail</label>
-										<input id="user-email" name="usr-email" type="email" required>
-									</div>
-									
-									<div class="news-line-form-block">
-										<label for="user-phone">Контактний телефон</label>
-										<input id="user-phone" name="usr-name" type="text" required>
-									</div>
-									
-									<div class="news-line-form-block">
-										<table class="select-table">
-											<tbody class="select-table-body">
-											<tr>
-												<td>
-													<input id="event-1" type="radio" name="event" value="category-event">
-													<label for="event-1">Категорія події</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr class="highlight">
-												<td>
-													<input id="event-2" type="radio" name="event" value="date-event">
-													<label for="event-2">Дата події</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr>
-												<td>
-													<input id="event-3" type="radio" name="event" value="hour-event">
-													<label for="event-3">Час події</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr class="highlight">
-												<td>
-													<input id="event-4" type="radio" name="event" value="region-event">
-													<label for="event-4">Область</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr>
-												<td>
-													<input id="event-5" type="radio" name="event" value="locality-event">
-													<label for="event-5">Населений пункт</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr class="highlight">
-												<td>
-													<input id="event-6" type="radio" name="event" value="street-event">
-													<label for="event-6">Вулиця</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											<tr>
-												<td>
-													<input id="event-7" type="radio" name="event" value="track-event">
-													<label for="event-7">Траса</label>
-												</td>
-												<td>Вибрати</td>
-											</tr>
-											</tbody>
-										</table>
-									</div>
-									
-									<div class="news-line-form-block news-line-form-block--last">
-										<label for="user-message">Текст оголошення:</label>
-										<textarea id="user-message" name="usr-message"></textarea>
-									</div>
-									
-									<div class="news-line-form-block news-line-form-block--last">
-										<input id="file-upload" type="file">
-										<label class="small-link" for="file-upload">Додати фото</label>
-									</div>
-									
-									<div class="news-line-form-block news-line-form-block--last">
-										<a href="#" class="small-link">Перегляд оголошення</a>
-									</div>
-									
-									<div class="news-line-form-block news-line-form-block--last">
-										<div class="radio-buttons">
-											<input id="q-yes" name="question" type="radio" value="yes" checked>
-											<label for="q-yes">Так</label>
-											
-											<input id="q-no" name="question" type="radio" value="no">
-											<label for="q-no">Ні</label>
-										</div>
-										<p class="text">Згоден з <a href="#" class="small-link">Правила подачі оголошення</a></p>
-									</div>
-									
-									<div class="news-line-form-block news-line-form-block--captcha">
-										<label for="user-captcha">Введіть код</label>
-										<div class="captcha-img">
-											<img src="img/captcha.jpg" width="264" height="73" alt="Captcha image">
-										</div>
-										<input id="user-captcha" name="usr-captcha" type="text" required>
-									</div>
-									
-									<button type="submit">Опублікувати оголошення</button>
-								</form>
-							</div>
-
-							<div class="box-socials">
-								<a href="javascript:void(0);" class="box-link box-link-fb"></a>
-								<a href="javascript:void(0);" class="box-link box-link-tweet"></a>
-								<a href="javascript:void(0);" class="box-link box-link-comment">
-									<span>Коментувати</span>
-									<span class="box-link-number">203</span>
-								</a>
-							</div>
-						</div>
-						
-						<p class="news-line-join">Приєднуйтесь до "Магнолія-ТВ" на Facebook!</p>
-						<div class="news-line-tags">
-							<span>Теги:</span>
-							<a href="javascript:void(0);">Оголошення</a>
-							<a href="javascript:void(0);">Подати оголошення</a>
-							<a href="javascript:void(0);">Шукаю свідків</a>
-						</div>
-						<div class="news-line-stuff">
-							<span>За матеріалами:</span>
-							<a href="javascript:void(0);">Магнолія-ТВ</a>
-						</div>
-						<div class="primary-breadcrumbs">
-							<ul>
-								<li>
-									<a href="index.html">Головна</a>
-								</li>
-								<li>
-									<a href="news.html">Шукаю свідків</a>
-								</li>
-								<li class="active">
-									<span>Подати оголошення</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</main>
-				
-				<!-- Правая колонка -->
-				<aside class="page-right-column col-lg-3">
-					<div class="content-box">
-						<div class="add_block">
-							<a href="javascript:void(0);">
-								<img src="img/sidebar/ad(1).png" width="300" height="250" alt="Рекламный блок">
-							</a>
-							<a class="alert_news" href="javascript:void(0);">
-								<img src="img/icons/alert_news.png" width="23" height="18" alt="Иконка громофона">
-								<span>Повідомити новину</span>
-							</a>
-							<a href="javascript:void(0);">
-								<img class="add" src="img/sidebar/ad(2).png" width="300" height="250" alt="Рекламный блок">
-							</a>
-						</div>
-						<div class="tracing">
-							<p class="heading">СЛУЖБА РОЗШУКУ ДІТЕЙ</p>
-							<div class="small_box">
-								<a href="news-photo.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
-									<p class="data">06.07.2017 17:30</p>
-								</div>
-							</div>
-							<div class="small_box">
-								<a href="news-photo.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
-									<p class="data">06.07.2017 17:30</p>
-								</div>
-							</div>
-							<div class="small_box">
-								<a href="news-photo.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
-									<p class="data">06.07.2017 17:30</p>
-								</div>
-							</div>
-							<a class="learn_more" href="news-feed.html">Більше</a>
-						</div>
-						
-						<div class="tracing expert-mind">
-							<p class="heading">Думка експертів</p>
-							<div class="small_box">
-								<a href="experts.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<p class="title">Валентин Гладких Кандидат філософських наук</p>
-									<a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
-								</div>
-							</div>
-							<div class="small_box">
-								<a href="experts.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<p class="title">Валентин Гладких Кандидат філософських наук</p>
-									<a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
-								</div>
-							</div>
-							<div class="small_box">
-								<a href="experts.html">
-									<img src="img/sidebar/small_img.png" width="99" height="99" alt="Фото новости">
-								</a>
-								<div class="text-part">
-									<p class="title">Валентин Гладких Кандидат філософських наук</p>
-									<a class="data text" href="experts.html">Чи зможе суд довести держзраду Януковича?</a>
-								</div>
-							</div>
-							<a class="learn_more" href="javascript:void(0);">Більше</a>
-						</div>
-					</div>
-				</aside>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Основной подвал -->
-	<footer>
-		<div class="container">
-			<ul>
-				<li>
-					<a href="javascript:void(0);">Про нас</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">Контакти</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">Правила користування сайтом</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">Карта сайту</a>
-				</li>
-			</ul>
-			<div class="links">
-				<div class="box">
-					<a href="javascript:void(0);">
-						<img src="img/icons/rss.png" width="21" height="21" alt="RSS иконка">
-					</a>
-					<a href="javascript:void(0);">
-						<img src="img/icons/facebook.png" width="13" height="23" alt="Facebook иконка">
-					</a>
-					<a href="javascript:void(0);">
-						<img src="img/icons/twet.png" width="25" height="21" alt="Tweeter иконка">
-					</a>
-					<a href="javascript:void(0);">
-						<img src="img/icons/google.png" width="33" height="20" alt="Google иконка">
-					</a>
-					<a href="javascript:void(0);">
-						<img src="img/icons/youtube.png" width="53" height="24" alt="Youtube иконка">
-					</a>
-				</div>
-				<p>Всі права захищені © Магнолія-ТВ</p>
-			</div>
-		</div>
-	</footer>
-</section>
-
-<!-- Модальное окно -->
-<div id="popupModal" class="popup-modal">
-	<button id="closeModal" class="popup-modal__close"></button>
-	
-	<form class="popup-modal__form" action="#">
-		<h3 class="popup-modal__form__title">Вхід</h3>
-		
-		<div class="popup-modal__form__input">
-			<label for="user-mail">Пошта</label>
-			<input id="user-mail" name="u-mail" type="email" required>
-		</div>
-		
-		<div class="popup-modal__form__input">
-			<label for="user-password">Пароль</label>
-			<input id="user-password" name="u-password" type="password" required>
-		</div>
-		
-		<div class="popup-modal__form__remember">
-			<input id="remember-check" name="remember-me" type="checkbox">
-			<label for="remember-check">Запам'ятати мене</label>
-			
-			<a href="javasrcipt:void(0);">Забули пароль?</a>
-		</div>
-		
-		<button class="popup-modal__form__btn">Увійти</button>
-	</form>
-	
-	<div class="popup-modal__social">
-		<b class="popup-modal__title">Увійти за допомогою</b>
-		
-		<div class="popup-modal__social__links">
-			<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--rss">RSS</a>
-			<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--fb">Facebook</a>
-			<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--tw">Twitter</a>
-			<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--google">Google+</a>
-			<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--youtube">Youtube</a>
-		</div>
-	</div>
-	
-	<div class="popup-modal__register">
-		<b class="popup-modal__title">Немає облікового запису?</b>
-		
-		<a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
-		<p>Натискаючи на кнопку входу через соцмережу, ви приймаєте <a href="javasrcipt:void(0);">Умови угоди</a></p>
-	</div>
-</div>
-<!-- Подложка модального окна -->
-<div id="popupOverlay" class="popup-overlay"></div>
-
-<!-- Загрузка скриптов -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.min.js"></script>
-
-</body>
-</html>

@@ -1,235 +1,144 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/media.css" rel="stylesheet">
-	</head>
-	
-	<body>
-		<section class="main-page">
-			
-			<!-- Основная шапка -->
-			<header class="main-header">
-				<div class="container">
-					<div class="row top-line">
-
-						<div class="col-3 top-line__left">
-							<a id="topNavLink" class="top-line__link" href="javasrcipt:void(0);">
-								<img src="img/icons/menu.png" width="33" height="23" alt="Sandwich menu icon">
-								&nbsp;
-								<span>Розділи</span>
-							</a>
-
-							<!-- Всплывающее меню -->
-							<nav id="topNav" class="popup-nav">
-								<ul class="popup-nav__list">
-									<li class="popup-nav__list__item popup-nav__list__item--first"><a href="about.html">Про нас</a></li>
-
-									<li class="popup-nav__list__item">
-										<a href="news.html">Стрічка новин</a>
-										<ul class="popup-nav__sublist">
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">злочини</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">дтп</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">хабарі</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-feed.html">коментарі</a></li>
-										</ul>
-									</li>
-
-									<li class="popup-nav__list__item">
-										<a href="javasrcipt:void(0);">телеканал чп.інфо</a>
-										<ul class="popup-nav__sublist">
-											<li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
-											<li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
-											<li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
-										</ul>
-									</li>
-
-									<li class="popup-nav__list__item"><a href="radio.html">Радіо магнолія</a></li>
-
-									<li class="popup-nav__list__item"><a href="experts.html">Думка експертів</a></li>
-
-									<li class="popup-nav__list__item">
-										<a href="interactive.html">ІНТЕРАКТИВ</a>
-										<ul class="popup-nav__sublist">
-											<li class="popup-nav__sublist__item"><a href="socials.html">Соціальні мережі</a></li>
-											<li class="popup-nav__sublist__item"><a href="blog.html">Блоги</a></li>
-											<li class="popup-nav__sublist__item"><a href="search.html">"Шукаю свідків!"</a></li>
-											<li class="popup-nav__sublist__item"><a href="search-advert.html">опитування</a></li>
-											<li class="popup-nav__sublist__item"><a href="search-inner.html">написати листа</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div>
-
-						<div class="col-3 top-line__logo">
-							<img src="img/header-logo.png" width="315" height="32" alt="Header logo">
-						</div>
-
-						<div class="col-3 top-line__right">
-							<a id="topPopupModalLink" class="top-line__login" href="javasrcipt:void(0);">
-								<img src="img/icons/languagr-img.png" width="28" height="24" alt="User icon">
-							</a>
-
-							<div id="topLangLink" class="top-line__lang">
-								<span>Укр</span>
-								<img src="img/icons/country.png" width="20" height="14" alt="Country flag">
-
-								<ul id="custom_options" class="top-line__lang__list">
-									<li data-value="">УКР</li>
-									<li data-value="1">EN</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			
-			<!-- Контентная часть -->
-			<main>
-				<div class="container">
-					<h1>МУЛЬТИМЕДІЙНА ПЛАТФОРМА</h1>
-					<img class="main-logo" src="img/logo-main.png" width="486" height="210" alt="Основной логотип">
-
-					<div class="block">
-						<a href="news.html" class="box">
-							<div class="img">
-								<img src="img/icons/news.png" width="79" height="87" alt="Иконка новости">
-							</div>
-							<div class="p">
-								<p>стрічка новин</p>
-							</div>
-						</a>
-						<a class="box" href="javascript:void(0);">
-							<div class="img">
-								<img src="img/icons/camera.png" width="143" height="56" alt="Иконка телеканал">
-							</div>
-							<div class="p">
-								<p>телеканал ЧП.INFo</p>
-							</div>
-						</a>
-						<a class="box" href="javascript:void(0);">
-							<div class="img">
-								<img src="img/icons/radio.png" width="97" height="95" alt="Иконка радио">
-							</div>
-							<div class="p">
-								<p>радіо магнолія</p>
-							</div>
-						</a>
-						<a class="box" href="javascript:void(0);">
-							<div class="img">
-								<img src="img/icons/interactive.png" width="162" height="82" alt="Иконка интерактив">
-							</div>
-							<div class="p">
-								<p>інтерактив</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</main>
-
-			<!-- Основной подвал -->
-			<footer>
-				<div class="container">
-					<ul>
-						<li>
-							<a href="javascript:void(0);">Про нас</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);">Контакти</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);">Правила користування сайтом</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);">Карта сайту</a>
-						</li>
-					</ul>
-					<div class="links">
-						<div class="box">
-							<a href="javascript:void(0);">
-								<img src="img/icons/rss.png" width="21" height="21" alt="RSS иконка">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/facebook.png" width="13" height="23" alt="Facebook иконка">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/twet.png" width="25" height="21" alt="Tweeter иконка">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/google.png" width="33" height="20" alt="Google иконка">
-							</a>
-							<a href="javascript:void(0);">
-								<img src="img/icons/youtube.png" width="53" height="24" alt="Youtube иконка">
-							</a>
-						</div>
-						<p>Всі права захищені © Магнолія-ТВ</p>
-					</div>
-				</div>
-			</footer>
-		</section>
-
-		<!-- Модальное окно -->
-		<div id="popupModal" class="popup-modal">
-			<button id="closeModal" class="popup-modal__close"></button>
-
-			<form class="popup-modal__form" action="#">
-				<h3 class="popup-modal__form__title">Вхід</h3>
-
-				<div class="popup-modal__form__input">
-					<label for="user-mail">Пошта</label>
-					<input id="user-mail" name="u-mail" type="email" required>
-				</div>
-
-				<div class="popup-modal__form__input">
-					<label for="user-password">Пароль</label>
-					<input id="user-password" name="u-password" type="password" required>
-				</div>
-
-				<div class="popup-modal__form__remember">
-					<input id="remember-check" name="remember-me" type="checkbox">
-					<label for="remember-check">Запам'ятати мене</label>
-
-					<a href="javasrcipt:void(0);">Забули пароль?</a>
-				</div>
-
-				<button class="popup-modal__form__btn">Увійти</button>
-			</form>
-
-			<div class="popup-modal__social">
-				<b class="popup-modal__title">Увійти за допомогою</b>
-
-				<div class="popup-modal__social__links">
-					<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--rss">RSS</a>
-					<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--fb">Facebook</a>
-					<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--tw">Twitter</a>
-					<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--google">Google+</a>
-					<a href="javasrcipt:void(0);" class="popup-modal__social__link popup-modal__social__link--youtube">Youtube</a>
-				</div>
-			</div>
-
-			<div class="popup-modal__register">
-				<b class="popup-modal__title">Немає облікового запису?</b>
-
-				<a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
-				<p>Натискаючи на кнопку входу через соцмережу, ви приймаєте <a href="javasrcipt:void(0);">Умови угоди</a></p>
-			</div>
-		</div>
-		<!-- Подложка модального окна -->
-		<div id="popupOverlay" class="popup-overlay"></div>
-	
-		<!-- Загрузка скриптов -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.min.js"></script>
-	
-	</body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <title>Головна
+  </title>
+  <body>
+    <section class="main-page">
+      <!-- Основная шапка-->
+      <header class="main-header">
+        <div class="container">
+          <div class="row top-line">
+            <div class="col-3"><a class="top-line__link" id="topNavLink" href="javasrcipt:void(0);"><img src="img/icons/menu.png" width="33" height="23" alt="Sandwich menu icon"><span>Розділи</span></a>
+              <!-- Всплывающее меню-->
+              <nav class="popup-nav" id="topNav">
+                <ul class="popup-nav__list">
+                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="about.html">Про нас</a></li>
+                  <li class="popup-nav__list__item"><a href="news.html">Стрічка новин</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">злочини</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">дтп</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">хабарі</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-feed.html">коментарі</a></li>
+                    </ul>
+                  </li>
+                  <li class="popup-nav__list__item"><a href="javasrcipt:void(0);">телеканал чп.інфо</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
+                      <li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
+                    </ul>
+                  </li>
+                  <li class="popup-nav__list__item"><a href="radio.html">Радіо магнолія</a></li>
+                  <li class="popup-nav__list__item"><a href="experts.html">Думка експертів</a></li>
+                  <li class="popup-nav__list__item"><a href="interactive.html">ІНТЕРАКТИВ</a>
+                    <ul class="popup-nav__sublist">
+                      <li class="popup-nav__sublist__item"><a href="socials.html">Соціальні мережі</a></li>
+                      <li class="popup-nav__sublist__item"><a href="blog.html">Блоги</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search.html">"Шукаю свідків!"</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search-advert.html">опитування</a></li>
+                      <li class="popup-nav__sublist__item"><a href="search-inner.html">написати листа</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3 top-line__logo"><a href="index.html"><img src="img/header-logo.png" width="315" height="32" alt="Header logo"></a></div>
+            <div class="col-3 top-line__right"><a class="top-line__login" id="topPopupModalLink" href="javasrcipt:void(0);"><img src="img/icons/languagr-img.png" width="28" height="24" alt="User icon"></a>
+              <div class="top-line__lang" id="topLangLink"><span>Укр</span><img src="img/icons/country.png" width="20" height="14" alt="Country flag">
+                <ul class="top-line__lang__list" id="custom_options">
+                  <li data-value="">УКР</li>
+                  <li data-value="1">EN</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            <!-- Контентная часть-->
+            <main>
+              <div class="container">
+                <h1>МУЛЬТИМЕДІЙНА ПЛАТФОРМА</h1><img class="main-logo" src="img/logo-main.png" width="486" height="210" alt="Основной логотип">
+                <div class="block"><a class="box" href="news.html">
+                    <div class="img"><img src="img/icons/news.png" width="79" height="87" alt="Иконка новости"></div>
+                    <div class="p">
+                      <p>стрічка новин</p>
+                    </div></a><a class="box" href="javascript:void(0);">
+                    <div class="img"><img src="img/icons/camera.png" width="143" height="56" alt="Иконка телеканал"></div>
+                    <div class="p">
+                      <p>телеканал ЧП.INFo</p>
+                    </div></a><a class="box" href="javascript:void(0);">
+                    <div class="img"><img src="img/icons/radio.png" width="97" height="95" alt="Иконка радио"></div>
+                    <div class="p">
+                      <p>радіо магнолія</p>
+                    </div></a><a class="box" href="javascript:void(0);">
+                    <div class="img"><img src="img/icons/interactive.png" width="162" height="82" alt="Иконка интерактив"></div>
+                    <div class="p">
+                      <p>інтерактив</p>
+                    </div></a></div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <!-- Основной подвал-->
+      <footer>
+        <div class="container">
+          <ul>
+            <li><a href="javascript:void(0);">Про нас</a></li>
+            <li><a href="javascript:void(0);">Контакти</a></li>
+            <li><a href="javascript:void(0);">Правила користування сайтом</a></li>
+            <li><a href="javascript:void(0);">Карта сайту</a></li>
+          </ul>
+          <div class="links">
+            <div class="box"><a href="javascript:void(0);"><img src="img/icons/rss.png" width="21" height="21" alt="RSS иконка"></a><a href="javascript:void(0);"><img src="img/icons/facebook.png" width="13" height="23" alt="Facebook иконка"></a><a href="javascript:void(0);"><img src="img/icons/twet.png" width="25" height="21" alt="Tweeter иконка"></a><a href="javascript:void(0);"><img src="img/icons/google.png" width="33" height="20" alt="Google иконка"></a><a href="javascript:void(0);"><img src="img/icons/youtube.png" width="53" height="24" alt="Youtube иконка"></a></div>
+            <p>Всі права захищені © Магнолія-ТВ</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Модальное окно-->
+    <div class="popup-modal" id="popupModal">
+      <button class="popup-modal__close" id="closeModal"></button>
+      <form class="popup-modal__form" action="#">
+        <h3 class="popup-modal__form__title">Вхід</h3>
+        <div class="popup-modal__form__input">
+          <label for="user-mail">Пошта</label>
+          <input id="user-mail" name="u-mail" type="email" required="">
+        </div>
+        <div class="popup-modal__form__input">
+          <label for="user-password">Пароль</label>
+          <input id="user-password" name="u-password" type="password" required="">
+        </div>
+        <div class="popup-modal__form__remember">
+          <input id="remember-check" name="remember-me" type="checkbox">
+          <label for="remember-check">Запам'ятати мене</label><a href="javasrcipt:void(0);">Забули пароль?</a>
+        </div>
+        <button class="popup-modal__form__btn">Увійти</button>
+      </form>
+      <div class="popup-modal__social"><b class="popup-modal__title">Увійти за допомогою</b>
+        <div class="popup-modal__social__links"><a class="popup-modal__social__link popup-modal__social__link--rss" href="javasrcipt:void(0);">RSS</a><a class="popup-modal__social__link popup-modal__social__link--fb" href="javasrcipt:void(0);">Facebook</a><a class="popup-modal__social__link popup-modal__social__link--tw" href="javasrcipt:void(0);">Twitter</a><a class="popup-modal__social__link popup-modal__social__link--google" href="javasrcipt:void(0);">Google+</a><a class="popup-modal__social__link popup-modal__social__link--youtube" href="javasrcipt:void(0);">Youtube</a></div>
+      </div>
+      <div class="popup-modal__register"><b class="popup-modal__title">Немає облікового запису?</b><a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
+        <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте<a href="javasrcipt:void(0);">Умови угоди</a></p>
+      </div>
+    </div>
+    <!-- Подложка модального окна-->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <!-- Загрузка скриптов-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</head>

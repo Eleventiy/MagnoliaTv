@@ -1,0 +1,70 @@
+// Основная шапка
+header.main-header
+	.container
+		.row.top-line
+			.col-3
+				a#topNavLink.top-line__link(href='javasrcipt:void(0);')
+					img(src='img/icons/menu.png', width='33', height='23', alt='Sandwich menu icon')
+					span Розділи
+				// Всплывающее меню
+				nav#topNav.popup-nav
+					ul.popup-nav__list
+						li.popup-nav__list__item.popup-nav__list__item--first
+							a(href='about.html') Про нас
+						li.popup-nav__list__item
+							a(href='news.html') Стрічка новин
+							ul.popup-nav__sublist
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') правозахист
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') події
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') злочини
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') дтп
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') хабарі
+								li.popup-nav__sublist__item
+									a(href='news-feed.html') коментарі
+						li.popup-nav__list__item
+							a(href='javasrcipt:void(0);') телеканал чп.інфо
+							ul.popup-nav__sublist
+								li.popup-nav__sublist__item
+									a(href='news-video.html') відеоновини
+								li.popup-nav__sublist__item
+									a(href='news-video.html') спецрепортаж
+								li.popup-nav__sublist__item
+									a(href='news-video.html') інтервью
+								li.popup-nav__sublist__item
+									a(href='news-video.html') відкритим текстом
+								li.popup-nav__sublist__item
+									a(href='online.html') онлайн трансляція
+						li.popup-nav__list__item
+							a(href='radio.html') Радіо магнолія
+						li.popup-nav__list__item
+							a(href='experts.html') Думка експертів
+						li.popup-nav__list__item
+							a(href='interactive.html') ІНТЕРАКТИВ
+							ul.popup-nav__sublist
+								li.popup-nav__sublist__item
+									a(href='socials.html') Соціальні мережі
+								li.popup-nav__sublist__item
+									a(href='blog.html') Блоги
+								li.popup-nav__sublist__item
+									a(href='search.html') "Шукаю свідків!"
+								li.popup-nav__sublist__item
+									a(href='search-advert.html') опитування
+								li.popup-nav__sublist__item
+									a(href='search-inner.html') написати листа
+			.col-3.top-line__logo
+				a(href='index.html')
+					img(src='img/header-logo.png', width='315', height='32', alt='Header logo')
+			.col-3.top-line__right
+				a#topPopupModalLink.top-line__login(href='javasrcipt:void(0);')
+					img(src='img/icons/languagr-img.png', width='28', height='24', alt='User icon')
+				#topLangLink.top-line__lang
+					span Укр
+					img(src='img/icons/country.png', width='20', height='14', alt='Country flag')
+					ul#custom_options.top-line__lang__list
+						li(data-value='') УКР
+						li(data-value='1') EN

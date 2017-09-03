@@ -1,0 +1,118 @@
+extends pug/layout/main
+
+block title
+	| Онлайн трансляція телеканал ЧП.Info
+
+	- var page = "online"
+
+block content
+	// Основной контент
+	main.page-center-column.col-lg-6
+		h1.heading Онлайн трансляція телеканал ЧП.Info
+		.news-line
+			.box
+				.box-body
+					.box-items
+						.box-item
+							iframe(height='300', allowfullscreen='', src='https://www.youtube.com/embed/mmVCm4OkkZk')
+							.box-item-content
+								span Фото: Дмитра Іванова
+			.box
+				a(href='javascript:void(0);')
+					h2.title Далі в ефірі
+				.calendar-part
+					table.calendar-table
+						thead.calendar-table-head
+							tr
+								td Зараз
+								td Спецрепортаж
+						tbody.calendar-table-body
+							tr
+								td
+									time(datetime='17:37') 17:37
+								td Служба розшуку дітей
+							tr.highlight
+								td
+									time(datetime='17:42') 17:42
+								td Спецрепортаж
+							tr
+								td
+									time(datetime='17:48') 17:48
+								td Експерти
+							tr.highlight
+								td
+									time(datetime='17:51') 17:51
+								td Спецрепортаж
+			.box
+				.text-part
+					a(href='javascript:void(0);')
+						h2.title Параметри супутникового мовлення
+					p.text
+						| Назва каналу на супутнику: «4P_INFO»
+						br
+						|                      Супутник «AMOS-7», орбітальна позиція – 4ºW;
+						br
+						|                      Частота прийому – 12410,5 МГц;
+						br
+						|                      Символьна швидкість – 20,833 М симв/сек;
+						br
+						|                      Поляризація – Horizontal;
+						br
+						|                      FEC – 7/8;
+						br
+						|                      ЧП.INFO – Бачити щоб жити!
+				a.read-more(href='javascript:void(0);')
+			.box
+				a(href='javascript:void(0);')
+					h2.title Контакти
+				.list-part
+					ul
+						li з технічних питань трансляції:(044)206-99-81
+						li з питань ретрансляції канала:(044)206-99-94
+			.box.last
+				a(href='javascript:void(0);')
+					h2.title Графік проведення профілактичних робот у 2017
+				.calendar-part
+					table.calendar-table
+						tbody.calendar-table-body
+							tr
+								td
+									time(datetime='2017-01-16') 16 січня
+								td 02:00 - 14:00
+							tr.highlight
+								td
+									time(datetime='2017-02-06') 06 лютого
+								td 11:00 - 17:00
+							tr
+								td
+									time(datetime='2017-03-06') 06 березня
+								td 02:00 - 14:00
+							tr.highlight
+								td
+									time(datetime='2017-05-22') 22 травня
+								td 02:00 - 14:00
+							tr
+								td
+									time(datetime='2017-06-05') 05 червня
+								td 02:00 - 14:00
+							tr.highlight
+								td
+									time(datetime='2017-07-03') 03 липня
+								td 11:00 - 17:00
+				a.box-button(href='javascript:void(0);') Структура власності
+				.box-socials
+					a.box-link.box-link-fb(href='javascript:void(0);')
+					a.box-link.box-link-tweet(href='javascript:void(0);')
+					a.box-link.box-link-comment(href='javascript:void(0);')
+						span Коментувати
+						span.box-link-number 203
+			.news-line-tags
+				span Теги:
+				a(href='javascript:void(0);') ЧП.INFO
+				a(href='javascript:void(0);') Онлайн трансляція
+			.primary-breadcrumbs
+				ul
+					li
+						a(href='index.html') Головна
+					li.active
+						span ЧП.INFO

@@ -1,0 +1,270 @@
+@import "../modules/_vars"
+
+.interactive-page
+	position: relative
+	max-width: 1920px
+	min-height: 100%
+	margin: auto
+	background: url('../img/interactive-main_bg.jpg') no-repeat
+	background-size: 100% 261px
+	.content
+		max-width: 1170px
+		margin: auto
+		margin-top: 190px
+		padding-top: 35px
+		.row
+			max-width: 1170px
+			main.page-center-column
+				position: relative
+				left: -20px
+				padding: 0
+				h1.heading
+					position: relative
+					left: 17px
+					display: inline-block
+					min-width: 250px
+					padding: 12px 30px
+					font-size: 19px
+					color: $color_1
+					text-transform: uppercase
+					font-family: $font_family_1
+					background: #1f4c6a
+					border-radius: 0 30px 30px 0
+					&:before
+						content: url('../img/icons/ul-label-nav.png')
+						position: absolute
+						z-index: 2
+						top: 0
+						left: -30px
+				.news-line
+					margin-top: 17px
+					margin-bottom: 100px
+					h2.title
+						margin: 0
+						margin-bottom: 15px
+						color: $color_7
+						font-family: $font_family_1
+						font-size: 23px
+						font-weight: 600
+						line-height: 28px
+						text-transform: uppercase
+					.box
+						position: relative
+						padding: 20px 0
+						border-top: 3px solid #5e98bd
+						&-body
+							.box-body-content
+								width: 100%
+								height: 325px
+								background-color: $color_7
+							p
+								margin-top: 20px
+								margin-bottom: 0
+								color: $color_9
+								font-size: 15px
+								font-weight: 600
+								line-height: 23px
+					.box-inner
+						padding-top: 10px
+						border: none
+						&-items
+							margin-top: 30px
+						&-item
+							display: flex
+							margin-bottom: 20px
+							.image-part
+							//width: 100%
+							.text-part
+								width: 65%
+								padding-left: 15px
+								font-size: 15px
+								font-weight: 600
+								line-height: 1.3
+								a
+									text-decoration: none
+								span
+									display: block
+									margin-bottom: 5px
+									color: $color_7
+									text-transform: uppercase
+									&:hover
+										color: $color_4
+								a.quiz-link
+									color: $color_9
+									text-decoration: underline
+									&:hover
+										text-decoration: none
+						&-more
+							margin-top: 10px
+							text-align: center
+							a
+								position: relative
+								z-index: 2
+								display: inline-block
+								padding: 0 25px
+								color: $color_1
+								font-size: 14px
+								font-weight: 600
+								line-height: 35px
+								border: 1px solid $color_7
+								-webkit-border-radius: 25px
+								-moz-border-radius: 25px
+								border-radius: 25px
+								background: $color_7
+								text-decoration: none
+								-webkit-transition: .3s ease-in-out
+								-moz-transition: .3s ease-in-out
+								-ms-transition: .3s ease-in-out
+								-o-transition: .3s ease-in-out
+								transition: .3s ease-in-out
+								&:hover
+									color: $color_7
+									background: $color_1
+							&::before
+								content: ''
+								position: absolute
+								bottom: 36px
+								left: 0
+								display: inline-block
+								height: 3px
+								width: 40%
+								background-color: $color_4
+							&::after
+								content: ''
+								position: absolute
+								bottom: 36px
+								right: 0
+								display: inline-block
+								height: 3px
+								width: 40%
+								background-color: $color_4
+					.box-quiz
+						border-top: none
+						border-bottom: 3px solid #5e98bd
+						&-content
+							position: relative
+							display: flex
+							&-image
+								width: 100%
+								max-height: 165px
+								overflow: hidden
+							&-text
+								max-width: 57%
+								padding-left: 20px
+								h3
+									color: #1f4c6a
+									font-size: 18.75px
+									font-weight: 600
+									line-height: 26px
+								a
+									position: absolute
+									bottom: 0
+									color: #009df4
+									font-size: 15px
+									font-weight: 600
+									line-height: 23px
+									text-decoration: underline
+									&:hover
+										text-decoration: none
+						&-more-link
+							content: ''
+							position: absolute
+							right: 0
+							bottom: 10px
+							width: 23px
+							height: 17px
+							background: url('../img/icons/arrow_read-more.png') no-repeat
+							-webkit-transition: 0.3s ease-in-out
+							-moz-transition: 0.3s ease-in-out
+							-ms-transition: 0.3s ease-in-out
+							-o-transition: 0.3s ease-in-out
+							transition: 0.3s ease-in-out
+							&:hover
+								background: url('../img/icons/arrow_read-more-hov.png') no-repeat
+						&-last
+							border: none
+							.box-quiz-content
+								margin-bottom: 20px
+					.box.last
+						border-bottom: 3px solid #5e98bd
+					&-form
+						margin-top: 25px
+						p
+							color: $color_9
+							font-size: 15px
+							font-weight: 600
+							line-height: 23px
+						&-block
+							margin-bottom: 15px
+							label
+								display: block
+								margin-bottom: 0
+								color: $color_7
+								font-size: 21px
+								font-weight: 600
+								line-height: 29px
+								cursor: pointer
+							input,
+							textarea
+								-webkit-box-sizing: border-box
+								-moz-box-sizing: border-box
+								box-sizing: border-box
+								display: block
+								width: 100%
+								height: 44px
+								padding: 6px 10px
+								font-family: $font_family_1
+								color: $color_7
+								font-size: 16px
+								font-weight: 600
+								line-height: 1.5
+								border: 2px solid #b7b7b7
+								outline: none
+							textarea
+								height: 135px
+								resize: none
+							&--captcha
+								display: flow-root
+								.captcha-img,
+								input[type="text"]
+									width: 49%
+									height: 74px
+								.captcha-img
+									float: left
+									border: 2px solid #b7b7b7
+									overflow: hidden
+								input[type="text"]
+									float: right
+									font-size: 28px
+						button[type="submit"]
+							-webkit-box-sizing: border-box
+							-moz-box-sizing: border-box
+							box-sizing: border-box
+							display: block
+							width: 70%
+							margin-top: 25px
+							color: $color_1
+							font-size: 18.75px
+							font-weight: 600
+							line-height: 40px
+							text-transform: uppercase
+							border: 3px solid transparent
+							background: $color_4
+							-webkit-border-radius: 45px
+							-moz-border-radius: 45px
+							border-radius: 45px
+							cursor: pointer
+							-webkit-transition: 0.3s ease-in-out
+							-moz-transition: 0.3s ease-in-out
+							-ms-transition: 0.3s ease-in-out
+							-o-transition: 0.3s ease-in-out
+							transition: 0.3s ease-in-out
+							&:hover
+								color: $color_4
+								background: $color_1
+								border-color: $color_4
+	aside.page-right-column
+		.content-box
+			.quiz,
+			.tracing.blogs
+				display: none

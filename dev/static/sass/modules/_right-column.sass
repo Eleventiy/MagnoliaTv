@@ -1,0 +1,230 @@
+aside.page-right-column
+	padding-left: 7px
+	.heading
+		padding: 8px 0
+		padding-left: 32px
+		max-width: 286px
+		font-size: 18.75px
+		color: $color_1
+		text-transform: uppercase
+		font-family: $font_family_1
+		background: #5d97bd
+		border-radius: 0 30px 30px 0
+		position: relative
+		left: 16px
+		margin-top: 20px
+		&:before
+			content: url('../img/icons/ul-label-nav.png')
+			position: absolute
+			z-index: 2
+			top: 0
+			left: -30px
+	.content-box
+		width: 300px
+		margin-bottom: 30px
+		.add_block
+			padding-bottom: 20px
+			border-bottom: 3px solid #1f4c6a
+			.alert_news
+				width: 277px
+				height: 64px
+				text-align: center
+				margin: auto
+				background: #1f4c6a
+				display: block
+				color: $color_1
+				font-family: $font_family_1
+				font-weight: 600
+				font-size: 18.75px
+				text-decoration: none
+				line-height: 62px
+				border-radius: 40px
+				margin-top: 11px
+				margin-bottom: 18px
+				border: 3px solid rgba(0, 0, 0, 0)
+				transition: 0.3s ease-in-out
+				&:hover
+					border: 3px solid #5d97bd
+					background: none
+					color: $color_7
+				img
+					position: relative
+					left: -7px
+				span
+					margin-left: 3px
+		.small_box
+			width: 100%
+			display: flex
+			a
+				width: 99px
+				max-height: 99px
+				overflow: hidden
+			.text-part
+				margin-left: 15px
+				max-width: 171px
+				.title
+					margin-bottom: 0
+					font-size: 19px
+					text-transform: uppercase
+					color: $color_7
+					font-family: $font_family_1
+					font-weight: 600
+					line-height: 26px
+					transition: 0.3s ease-in-out
+					text-decoration: none
+					&:hover
+						color: $color_9
+				.data
+					font-size: 15px
+					color: $color_9
+					margin-top: 7px
+					transition: 0.3s ease-in-out
+					font-weight: 600
+					&:hover
+						color: $color_7
+		.tracing
+			.learn_more
+				width: 89px
+				height: 33px
+				border-radius: 23px
+				margin: auto
+				display: block
+				background: #1f4c6a
+				text-align: center
+				font-size: 14px
+				font-family: "Open Sans", Tahoma, sans-serif
+				color: #ffffff
+				text-decoration: none
+				line-height: 31px
+				position: relative
+				left: -3px
+				margin-top: 6px
+				border: 1px solid rgba(0, 0, 0, 0)
+				transition: 0.3s ease-in-out
+				&:hover
+					background: none
+					color: $color_7
+					border: 1px solid #1f4c6a
+				&:before
+					content: ''
+					width: 96px
+					background: #5d97bd
+					height: 3px
+					position: absolute
+					left: -104px
+					top: 15px
+				&:after
+					content: ''
+					width: 103px
+					background: #5d97bd
+					height: 3px
+					position: absolute
+					right: -111px
+					top: 15px
+		.quiz
+			border-bottom: 3px solid #1f4c6a
+			padding-bottom: 22px
+			.box
+				.title
+					color: $color_7
+					font-size: 18.75px
+					font-family: $font_family_1
+					font-weight: 600
+					margin: 0
+					margin-top: 14px
+					line-height: 26px
+					text-transform: uppercase
+				.quiz-option
+					list-style-type: none
+					margin: 0
+					padding: 0
+					margin-top: 15px
+					margin-left: -3px
+					.h
+						padding-left: 0
+						color: $color_4
+						cursor: default
+					li
+						display: block
+						position: relative
+						width: 100%
+						input[type=radio]
+							position: absolute
+							visibility: hidden
+						label
+							display: block
+							position: relative
+							font-size: 16.67px
+							font-family: $font_family_1
+							font-weight: 300
+							padding-left: 25px
+							margin-top: -7px
+							margin-bottom: 12px
+							z-index: 9
+							cursor: pointer
+							-webkit-transition: all 0.25s linear
+						.check
+							display: block
+							position: absolute
+							border: 1px solid $border_color_3
+							border-radius: 100%
+							height: 15px
+							width: 15px
+							top: 50%
+							left: 0
+							margin-top: -8px
+							z-index: 5
+							transition: border .25s linear
+							-webkit-transition: border .25s linear
+							&::before
+								content: ''
+								font-size: 12px
+								background: #5d97bd
+				input[type=radio]
+					&:checked
+						&~.check
+							background: #5d97bd
+							border: none
+							border-radius: 50%
+							&::before
+								content: "✔"
+								font-size: 9px
+								position: relative
+								top: -7px
+								left: 4px
+								border-radius: 50%
+								color: $color_1
+								background: none
+				.vote
+					margin: auto
+					display: block
+					width: 273px
+					height: 44px
+					background: #1f4c6a
+					font-size: 18.75px
+					color: $color_1
+					border-radius: 40px
+					text-align: center
+					line-height: 38px
+					font-family: $font_family_1
+					font-weight: 600
+					text-decoration: none
+					border: 2px solid rgba(0, 0, 0, 0)
+					transition: 0.3s ease-in-out
+					cursor: pointer
+					outline: none
+					&:hover
+						background: none
+						border: 2px solid #1f4c6a
+						color: $color_7
+		.expert-mind
+			.small_box
+				margin-bottom: 10px
+			.title
+				font-size: 15px !important
+				line-height: 21px !important
+			.text
+				text-decoration: underline
+				margin-top: 1px !important
+			a.learn-more
+				margin-top: 14px

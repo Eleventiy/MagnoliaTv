@@ -1,0 +1,88 @@
+nav.page-left-column
+	position: relative
+	left: 35px
+	ul
+		margin: 0
+		padding: 0
+		margin-bottom: 6px
+		&:last-child
+			margin-top: -12px
+		li
+			color: $color_4
+			font-family: $font_family_1
+			font-size: 16.7px
+			line-height: 35px
+			font-weight: 600
+			text-transform: uppercase
+		a
+			color: $color_4
+			text-decoration: none
+			cursor: pointer
+		li.main
+			position: relative
+			width: 96%
+			height: 44px
+			margin-left: -46px
+			padding-left: 32px
+			font-size: 18.75px
+			text-transform: uppercase
+			border: 3px solid $color_4
+			border-radius: 0 30px 30px 0
+			border-left: none
+			transition: 0.3s ease-in-out
+			&:before
+				content: url('../img/icons/ul-label-nav.png')
+				position: absolute
+				top: -3px
+				left: -31px
+				z-index: 2
+				width: 47px
+				height: 44px
+				border-right: 5px solid
+				border-radius: 50%
+				transition: 0.3s ease-in-out
+			&:hover
+				border-color: $border_color_2
+				background-color: $background_color_6
+				a
+					color: $color_1
+				&:before
+					border-color: $border_color_2
+			a
+				transition: 0.3s ease-in-out
+	ul.alone
+		margin-bottom: 14px
+	.search-box
+		position: relative
+		top: 29px
+		right: 58px
+		.search
+			width: 256px
+			position: relative
+			border-bottom: 1px solid #1f4c6a
+			input
+				width: 230px
+				font-size: 18.75px
+				font-family: $font_family_1
+				font-weight: 300
+				padding-left: 10px
+				border: none
+				padding-bottom: 5px
+				outline: none
+			.search-submit-btn
+				position: absolute
+				top: 3px
+				right: 7px
+				width: 22px
+				height: 22px
+				background: transparent url('../img/icons/loop.png') no-repeat
+				border: none
+				cursor: pointer
+				outline: none
+		.box-links
+			width: 258px
+			margin-top: 30px
+			display: flex
+			justify-content: center
+			a
+				margin: 0 9px

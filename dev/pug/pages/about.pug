@@ -1,0 +1,41 @@
+extends ../layout/main
+
+block title
+	| Блог
+
+	- var page = "about"
+
+block content
+	.container
+		.content
+			.row
+				main.page-center-column.col-12
+					h1.heading Про нас
+
+					.wrapper
+						.box-main.box
+							.box-main__head
+								.box-main__head__left
+									h3 У раді хочуть саджати на 3 роки українських артистів
+									p Народні депутати пропонують ввести кримінальну відповідальність за виступи українських артистів в Російській Федерації. Відповідний законопроект уже зареєстрували у Верховній Раді. Покарання – Народні депутати пропонують ввести кримінальну відповідальність за виступи українських артистів в Російській Федерації.
+									a(href="#") Скачати презентацію
+								.box-main__head__right
+									.box-main__head__video
+										iframe(height='300', src='https://www.youtube.com/embed/mmVCm4OkkZk', allowfullscreen='')
+							.box-main__awards
+								.box-main__awards__items
+									.box-main__awards__item
+										//img(src="static/img/some-img.jpg", alt="Award img 1")
+										p
+											span.count-number 1380
+											| найденых детей
+									.box-main__awards__item
+										//img(src="static/img/some-img.jpg", alt="Award img 2")
+										p
+											span.count-number 1 000 000
+											| часов репортажей
+									.box-main__awards__item
+										//img(src="static/img/some-img.jpg", alt="Award img 3")
+										p
+											span.count-number 15 лет
+											| работы

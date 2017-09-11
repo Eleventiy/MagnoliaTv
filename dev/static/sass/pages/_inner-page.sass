@@ -1,0 +1,545 @@
+@import "../modules/_vars"
+
+.socials-links
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	margin-top: 20px
+	.socials-link
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		display: flex
+		align-items: center
+		position: relative
+		height: 43px
+		padding: 8px 35px
+		margin-right: 10px
+		color: #004b6c
+		border: 2px solid #004b6c
+		-webkit-border-radius: 40px
+		-moz-border-radius: 40px
+		border-radius: 40px
+		background-color: $color_1
+		-webkit-transition: .1s linear
+		-moz-transition: .1s linear
+		-ms-transition: .1s linear
+		-o-transition: .1s linear
+		transition: .1s linear
+		text-decoration: none
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+		&:hover
+			color: $color_1
+			background-color: #004b6c
+		&-fb
+			&::before
+				width: 13px
+				height: 23px
+				background: url('../img/icons/facebook_blue.png') no-repeat
+			&:hover
+				&::before
+					background: url('../img/icons/facebook.png') no-repeat
+		&-tweet
+			&::before
+				width: 25px
+				height: 21px
+				background: url('../img/icons/tweet_blue.png') no-repeat
+			&:hover
+				&::before
+					background: url('../img/icons/twet.png') no-repeat
+		&-comment
+			margin-left: auto
+			margin-right: 0
+			padding: 8px 20px 8px 50px
+			&::before
+				top: 23px
+				left: 30px
+				width: 23px
+				height: 23px
+				background: url('../img/icons/comment.png') no-repeat
+			&:hover
+				&::before
+					background: url('../img/icons/comment-white.png') no-repeat
+.filter
+	top: 8px
+	position: relative
+	.filter-column
+		display: inline-block
+	label
+		display: inline-block
+		font-size: 17px
+		color: #1f4c6a
+		font-family: $font_family_1
+		font-weight: 600
+		line-height: 29px
+	.filter_news_custom_select
+		display: inline-block
+		position: relative
+		color: #2ba4f5
+		font-size: 17px
+		font-family: $font_family_1
+		font-weight: 600
+		margin-left: 12px
+		margin-right: 21px
+		line-height: 29px
+		b
+			position: relative
+			left: 3px
+		.filter_news_custom_option
+			display: none
+			position: absolute
+			list-style-type: none
+			margin: 0
+			min-width: 180px
+			background: rgba(254,254,254,1)
+			padding: 15px
+			border-radius: 0 0 14px 14px
+			li
+				padding: 5px
+	// Стилизация select
+	.select-hidden
+		display: none
+		visibility: hidden
+		padding-right: 10px
+	.select
+		display: inline-block
+		position: relative
+		width: 140px
+		height: 18px
+		margin-left: 10px
+		color: $color_10
+		font-weight: 600
+		cursor: pointer
+	.select-styled
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		-moz-transition: all 0.2s ease-in
+		-o-transition: all 0.2s ease-in
+		-webkit-transition: all 0.2s ease-in
+		transition: all 0.2s ease-in
+		&::after
+			content: ""
+			position: absolute
+			top: 7px
+			right: 40px
+			border: solid #000a1d
+			border-width: 0 2px 2px 0
+			display: inline-block
+			padding: 3px
+			transform: rotate(45deg)
+			-webkit-transform: rotate(45deg)
+	.select-options
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		display: none
+		position: absolute
+		top: 25px
+		right: 0
+		left: 0
+		z-index: 999
+		margin: 0
+		padding: 15px
+		list-style: none
+		background-color: $color_1
+		-webkit-border-radius: 0 0 14px 14px
+		-moz-border-radius: 0 0 14px 14px
+		border-radius: 0 0 14px 14px
+		-webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
+		-moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.5)
+		box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
+		li
+			margin: 0
+			padding: 5px
+			-moz-transition: all 0.15s ease-in
+			-o-transition: all 0.15s ease-in
+			-webkit-transition: all 0.15s ease-in
+			transition: all 0.15s ease-in
+			line-height: 2
+			&:hover
+				color: $color_7
+
+			&[rel="hide"]
+				display: none
+.box-pagination
+	margin-top: 41px
+	margin-bottom: 20px
+	text-align: center
+	.pagination
+		max-width: 225px
+		margin: auto
+		.active
+			color: $color_7
+			a
+				color: $color_7
+		li
+			font-size: 17px
+			font-family: $font_family_1
+			font-weight: 600
+			color: $color_10
+			padding: 0 12.3px
+			&:hover
+				color: $color_7
+				a
+					color: $color_7
+			a
+				font-size: 17px
+				font-family: $font_family_1
+				font-weight: 600
+				color: $color_10
+				text-decoration: none
+.link-share
+	position: relative
+	display: block
+	margin-top: 10px
+	margin-left: auto
+	padding-right: 55px
+	color: $color_9
+	font-weight: 600
+	text-decoration: none
+	text-align: right
+	-webkit-transition: .3s ease-in-out
+	-moz-transition: .3s ease-in-out
+	-ms-transition: .3s ease-in-out
+	-o-transition: .3s ease-in-out
+	transition: .3s ease-in-out
+	&:hover
+		color: $color_7
+		text-decoration: none
+	&::after
+		content: ''
+		position: absolute
+		top: 4px
+		right: 30px
+		width: 18px
+		height: 15px
+		background: url('../img/icons/arrow-share.png') no-repeat
+	&-comment
+		position: absolute
+		top: 2px
+		right: 0
+		width: 20px
+		height: 20px
+		background: url('../img/icons/comment-icon.png') no-repeat
+
+// Всплывающее меню
+.popup-nav
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	display: none
+	position: absolute
+	background: rgba(#3B7DA8, 0.83)
+	width: 320px
+	z-index: 10
+	top: 62px
+	right: 0
+	padding: 20px 15px 0 40px
+	&__list
+		padding-left: 0
+		list-style: none
+		text-align: left
+		li
+			color: $color_1
+			font-size: 22px
+			line-height: 1.3
+			font-weight: 600
+			text-transform: uppercase
+			a
+				color: $color_1
+				font-weight: 400
+				&:hover
+					text-decoration: underline
+		&__item
+			margin-bottom: 30px
+	&__sublist
+		margin-top: 15px
+		padding-left: 20px
+		list-style: disc
+		&__item
+			margin-bottom: 10px
+
+// Модальное окно
+.popup-modal
+	display: none
+	position: fixed
+	top: 30%
+	left: 50%
+	z-index: 9999
+	width: 490px
+	padding: 30px 45px
+	font-weight: 600
+	text-align: center
+	background-color: $color_1
+	transform: translate(-50%, -30%)
+	&__title
+		display: block
+		margin-bottom: 30px
+		color: $color_4
+	button:focus
+		outline: none
+	&__close
+		position: absolute
+		top: 20px
+		right: 10px
+		display: block
+		width: 14px
+		height: 14px
+		border: none
+		background: transparent
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			right: 10px
+			width: 14px
+			height: 2px
+			background-color: #b7b7b7
+			-webkit-transform: rotate(45deg)
+			-moz-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			-o-transform: rotate(45deg)
+			transform: rotate(45deg)
+		&::after
+			content: ''
+			position: absolute
+			right: 10px
+			width: 14px
+			height: 2px
+			background-color: #b7b7b7
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+	&__form
+		color: $color_4
+		font-family: $font_family_1
+		font-size: 21px
+		text-align: left
+		&__title
+			margin-bottom: 25px
+			font-size: 25px
+			line-height: 29px
+			text-transform: uppercase
+		label
+			margin-bottom: 0
+			color: $color_7
+			cursor: pointer
+		&__input
+			margin-bottom: 15px
+			input
+				-webkit-box-sizing: border-box
+				-moz-box-sizing: border-box
+				box-sizing: border-box
+				display: block
+				width: 100%
+				height: 44px
+				border: 2px solid #b7b7b7
+				outline: none
+				padding: 6px 10px
+				color: $color_7
+				font-family: $font_family_1
+				font-size: 16px
+				line-height: 1.5
+				font-weight: 600
+		&__remember
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 30px
+			label
+				position: relative
+				padding-left: 30px
+				color: $color_7
+			a
+				font-size: 16.67px
+				color: $color_4
+			input[type="checkbox"]
+				display: none
+				&+label
+					&::before
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0
+						width: 20px
+						height: 20px
+						margin-top: -10px
+						background-color: $background_color_1
+						-webkit-transition: background-color 0.25s
+						-moz-transition: background-color 0.25s
+						-ms-transition: background-color 0.25s
+						-o-transition: background-color 0.25s
+						transition: background-color 0.25s
+				&:hover
+					&+label
+						&::before
+							background-color: $background_color_2
+				&:checked
+					&+label
+						&::before
+							background-color: $background_color_2
+						&::after
+							content: ''
+							position: absolute
+							left: 5px
+							top: 15px
+							background: white
+							width: 2px
+							height: 2px
+							box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
+							-webkit-transform: rotate(45deg)
+							transform: rotate(45deg)
+		&__btn
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			display: block
+			width: 100%
+			margin-bottom: 40px
+			color: $color_1
+			font-size: 18.75px
+			font-weight: 600
+			line-height: 40px
+			text-transform: uppercase
+			border: 3px solid transparent
+			background: $color_4
+			-webkit-border-radius: 45px
+			-moz-border-radius: 45px
+			border-radius: 45px
+			cursor: pointer
+			-webkit-transition: .3s ease-in-out
+			-moz-transition: .3s ease-in-out
+			-ms-transition: .3s ease-in-out
+			-o-transition: .3s ease-in-out
+			transition: .3s ease-in-out
+			&:hover
+				color: $color_4
+				background: $color_1
+				border-color: $color_4
+	&__social
+		position: relative
+		padding: 30px 20px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			left: -45px
+			width: 490px
+			height: 3px
+			background-color: $color_4
+		&::before
+			top: 0
+		&::after
+			bottom: 0
+		&__links
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__link
+			width: 100%
+			height: 35px
+			font-size: 0
+			&--rss
+				background: url('../img/icons/rss_blue.png') no-repeat
+			&--fb
+				background: url('../img/icons/facebook_blue.png') no-repeat
+			&--tw
+				background: url('../img/icons/tweet_blue.png') no-repeat
+			&--google
+				background: url('../img/icons/google_blue.png') no-repeat
+			&--youtube
+				background: url('../img/icons/youtube_blue.png') no-repeat
+	&__register
+		padding-top: 30px
+		&__link
+			display: block
+			margin-bottom: 35px
+			font-size: 18.75px
+			line-height: 40px
+			color: $color_1
+			text-transform: uppercase
+			text-decoration: none
+			border: 3px solid transparent
+			background-color: $color_7
+			-webkit-border-radius: 45px
+			-moz-border-radius: 45px
+			border-radius: 45px
+			-webkit-transition: .3s ease-in-out
+			-moz-transition: .3s ease-in-out
+			-ms-transition: .3s ease-in-out
+			-o-transition: .3s ease-in-out
+			transition: .3s ease-in-out
+			&:hover
+				text-decoration: none
+				color: $color_7
+				background: $color_1
+				border-color: $color_7
+		p
+			color: $color_7
+			font-size: 17px
+			a
+				color: $color_10
+
+// Подложка модального окна
+.popup-overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9998
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.8)
+	cursor: pointer
+
+// Хлебные крошки внутренних страниц
+.primary-breadcrumbs
+	padding: 10px 0
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+	li
+		display: inline-block
+		&::after
+			content: '/'
+			margin-left: 5px
+			color: $color_16
+			font-weight: 600
+		&:last-child
+			&::after
+				content: ''
+	a
+		color: $color_16
+		text-decoration: none
+		font-size: 15px
+		font-weight: 600
+		-webkit-transition: .3s ease-in-out
+		-moz-transition: .3s ease-in-out
+		-ms-transition: .3s ease-in-out
+		-o-transition: .3s ease-in-out
+		transition: .3s ease-in-out
+		&:hover
+			color: $color_7
+	span
+		color: $color_16
+		text-decoration: none
+		font-size: 15px
+		font-weight: 600
+	li.active
+		span
+			color: $color_7

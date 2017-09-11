@@ -1,0 +1,92 @@
+extends ../layout/main
+
+block title
+	| Радіо Магнолія
+
+	- var page = "radio"
+
+block content
+	.container
+		.content
+			.row
+				include ../modules/left-column
+				// Основной контент
+				main.page-center-column.col-lg-6
+					h1.heading РАДІО МАГНОЛІЯ
+					.news-line
+						.box
+							.box-body
+								iframe(height='300', allowfullscreen='', src='https://www.svoboda.org/embed/player/0/28707696.html?type=video')
+								// <iframe height="300" allowfullscreen src="https://www.youtube.com/embed/mmVCm4OkkZk"></iframe>
+								.box-body-content
+									.ether-now
+										h2.title Зараз в ефірі:
+										p Интервью Б. Корчилава - О Параллелях Между Грузией И Украиной
+						.box
+							.box-body
+								.box-body-content
+									.ether-next
+										h2.title Далі в ефірі:
+										p Mariah Carey My All
+										p Lisa Stansfield Never Never Gonna Give You Up
+						.box
+							.box-body
+								.box-body-content
+									.ether-player
+										h2.title Слухати у своєму плеєрі:
+										p Плеєри, рекомендовані для прослуховування Радіо Магнолія.
+										.text-part
+											p.title Для операційної системи Microsoft Windows:
+											p
+												| Winamp Media Player (можно скачати безкоштовно на &nbsp;
+												a(href='#') winamp.com
+												| ) AIMP (можно скачати безкоштовно на &nbsp;
+												a(href='#') aimp.ru
+												| )
+										.text-part
+											p.title Для операційної системи Linux:
+											p
+												| VLC media player, (можно скачати безкоштовно на &nbsp;
+												a(href='#') videolan.org
+												| )
+												br
+												| Слухайте Радіо Магнолія у себе на комп'ютері:
+												br
+												| Для 64 kb/s - &nbsp;
+												a(href='#') скачати файл
+												br
+												| Для 128 kb/s - &nbsp;
+												a(href='#') скачати файл
+						.box.last
+							.box-body
+								.box-body-content
+									.ether-site
+										h2.title Слухати у своєму плеєрі:
+										.ether-site-form
+											p 1. Виберіть кнопку плеєра відповідного розміру:
+											form(action='#', method='post')
+												.ether-site-form-input
+													input#radio-big(name='resolution', type='radio', value='160px')
+													label(for='radio-big') 160px
+												.ether-site-form-input
+													input#radio-small(name='resolution', type='radio', value='130px', checked)
+													label(for='radio-small') 130px
+											p 2. Код кнопки:
+								.socials-links
+									a.socials-link.socials-link-fb(href='javascript:void(0);')
+									a.socials-link.socials-link-tweet(href='javascript:void(0);')
+									a.socials-link.socials-link-comment(href='javascript:void(0);')
+										span Коментувати
+
+						.news-line-tags
+							span Теги:
+							a(href='javascript:void(0);') ЧП.INFO
+							a(href='javascript:void(0);') Онлайн трансляція
+						.primary-breadcrumbs
+							ul
+								li
+									a(href='index.html') Головна
+								li.active
+									span ЧП.INFO
+
+				include ../modules/right-column

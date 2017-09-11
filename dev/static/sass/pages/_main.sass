@@ -1,0 +1,94 @@
+.main-page
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	position: relative
+	max-width: 1920px
+	min-height: 100%
+	margin: auto
+	background: url('../img/bg-main-page.png')
+	background-repeat: no-repeat
+	background-size: cover
+	&::after
+		content: ''
+		display: block
+	main
+		width: 90%
+		margin: auto
+		margin-top: 0
+	.container
+		max-width: 1170px
+		margin: auto
+		text-align: center
+		h1
+			font-size: 44px
+			color: $color_1
+			font-family: $font_family_2
+			text-transform: uppercase
+			line-height: 1.793em
+			margin-top: 6vw
+			letter-spacing: 0.077em
+		.main-logo
+			margin-top: 0.125em
+	.block
+		max-width: 85%
+		padding: 15px 0
+		margin: auto
+		background: rgba(59, 125, 168, 0.83)
+		border-radius: 100px
+		margin-top: 9vh
+		display: flex
+		justify-content: center
+		align-items: center
+		.box
+			margin: 0 4.7%
+			display: block
+			width: 7.7vw
+			text-decoration: none
+			text-align: center
+			position: relative
+			cursor: pointer
+			transition: 0.3s ease-in-out
+			.img
+				//width: 100%
+				min-height: 120px
+				display: flex
+				align-items: center
+				justify-content: center
+				transition: .2s linear
+			.p
+				font-size: 1.2vw
+				font-family: $font_family_2
+				text-transform: uppercase
+				color: $color_1
+				min-height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+				letter-spacing: 0.08em
+				transition: 0.3s ease-in-out
+				p
+					line-height: 1.6vw
+					margin: 0
+					transition: 0.3s ease-in-out
+			&:hover
+				.p
+					p
+						text-shadow: 0 0 20px #143043
+				.img
+					-webkit-transform: scale(1.1)
+					-moz-transform: scale(1.1)
+					-ms-transform: scale(1.1)
+					-o-transform: scale(1.1)
+					transform: scale(1.1)
+			&:after
+				content: ''
+				width: 2px
+				background: #99a7b1
+				height: 161px
+				position: absolute
+				top: 12px
+				right: -33%
+			&:last-child
+				&:after
+					display: none

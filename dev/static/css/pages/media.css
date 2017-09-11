@@ -1,0 +1,40 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600";
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+@media screen and (max-width: 1366px), screen and (max-height: 900px) {
+  .main-page .container h1 {
+    margin-top: 3vw;
+    font-size: 34px;
+  }
+  .main-page .container .main-logo {
+    width: 33% !important;
+    margin-top: 1.125em;
+  }
+  .main-page .block {
+    max-width: 70%;
+    margin-top: 5vh;
+  }
+  .main-page .block .box {
+    margin-top: 0;
+  }
+  .main-page .block .box .p {
+    font-size: 0.9vw;
+  }
+  footer .container ul li a {
+    font-size: 20px;
+  }
+  footer .container .links p {
+    font-size: 15px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,125 @@
+extends ../layout/main
+
+block title
+	| Шукаю свідків
+
+	- var page = "search-inner"
+
+block content
+	.container
+		.content
+			.row
+				include ../modules/left-column
+				// Основной контент
+				main.page-center-column.col-lg-6
+					h1.heading ШУКАЮ СВІДКІВ
+					.news-line
+						.box.last
+							h2.title Оголошення Шукаю свідків №93355
+							.box-head
+								time(datetime='2017-07-07T17:30') 07.07.2017 17:30
+								.box-head-more
+									span.box-head-watch 250
+									span.box-head-comment 0
+							.box-body
+								.box-body-head
+									.image-block
+										img(src='static/img/icons/accident.jpg', width='243', height='165', alt='Image')
+									.text-block
+										ul.events-list
+											li.list-item
+												span.category Категорія події: &nbsp;
+												span.category-event ДТП
+											li.list-item
+												span.category Населений пункт: &nbsp;
+												span.category-city м. Київ
+											li.list-item
+												span.category Вулиця: &nbsp;
+												span.category-street проспект Лобановського, 56
+											li.list-item
+												span.category Час: &nbsp;
+												span.category-time 08:10
+								.text-content
+									p
+										| Прошу відгукнутися всіх, хто був свідком аварії між Мерседес бенц і Чері 14 липня 2017 року на проспекті Лобановського, 56 біля зупинки Андрія Головка
+									em
+										| Якщо Ви були свідком того, що сталося, будь-ласка, зв´яжіться з автором оголошення!
+									ul.author-contacts-list
+										li
+											span.contact Контакт: &nbsp;
+											span.contact-name Валерій
+										li
+											span.contact Телефон: &nbsp;
+											span.contact-name  0679626755
+										li
+											span.contact E-mail: &nbsp;
+											span.contact-name 248760@meta.ua
+							.socials-links
+								a.socials-link.socials-link-fb(href='javascript:void(0);')
+								a.socials-link.socials-link-tweet(href='javascript:void(0);')
+								a.socials-link.socials-link-comment(href='javascript:void(0);')
+									span Коментувати
+
+						p.news-line-join Приєднуйтесь до "Магнолія-ТВ" на Facebook!
+						.news-line-tags
+							span Теги: &nbsp;
+							a(href='javascript:void(0);') м.Київ
+							a(href='javascript:void(0);') відео новина
+							a(href='javascript:void(0);') ДТП
+							a(href='javascript:void(0);') ДТП Київ
+							a(href='javascript:void(0);') ДТП Киев
+							a(href='javascript:void(0);') Київ ЧП.INFO
+						.news-line-stuff
+							span За матеріалами: &nbsp;
+							a(href='javascript:void(0);') Магнолія-ТВ
+						.primary-breadcrumbs
+							ul
+								li
+									a(href='index.html') Головна
+								li
+									a(href='news.html') Стрічка новин
+								li.active
+									span Події
+						.box.box-more
+							h2.title ЧИТАЙТЕ ТАКОЖ
+							.box-content
+								.img
+									a(href="search-inner.html")
+										img(src='static/img/icons/accident.jpg', width='243', height='165', alt='Фото новости')
+								.text-part
+									p.text
+										| Прошу відгукнутися всіх, хто був свідком аварії між Мерседес бенц і Чері 14 липня 2017 року на проспекті Лобановського, 56 біля зупинки Андрія Головка…
+									p.data 06.07.2017 17:30
+							a.read-more(href='search-inner.html')
+						.box.box-more
+							.box-content
+								.img
+									a(href="search-inner.html")
+										img(src='static/img/icons/lawyer.jpg', width='243', height='165', alt='Фото новости')
+								.text-part
+									p.text
+										| Прошу відгукнутися всіх, хто був свідком аварії між Мерседес бенц і Чері 14 липня 2017 року на проспекті Лобановського, 56 біля зупинки Андрія Головка…
+									p.data 06.07.2017 17:30
+							a.read-more(href='search-inner.html')
+						.box.box-more
+							.box-content
+								.img
+									a(href="search-inner.html")
+										img(src='static/img/icons/prison.jpg', width='243', height='165', alt='Фото новости')
+								.text-part
+									p.text
+										| Прошу відгукнутися всіх, хто був свідком аварії між Мерседес бенц і Чері 14 липня 2017 року на проспекті Лобановського, 56 біля зупинки Андрія Головка…
+									p.data 06.07.2017 17:30
+							a.read-more(href='search-inner.html')
+						.box.last.box-more
+							.box-content
+								.img
+									a(href="search-inner.html")
+										img(src='static/img/icons/car.jpg', width='243', height='165', alt='Фото новости')
+								.text-part
+									p.text
+										| Прошу відгукнутися всіх, хто був свідком аварії між Мерседес бенц і Чері 14 липня 2017 року на проспекті Лобановського, 56 біля зупинки Андрія Головка…
+									p.data 06.07.2017 17:30
+							a.read-more(href='search-inner.html')
+
+				include ../modules/right-column

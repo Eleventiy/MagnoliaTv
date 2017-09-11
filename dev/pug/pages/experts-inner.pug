@@ -1,0 +1,144 @@
+extends ../layout/main
+
+block title
+	| Думка експерта
+
+	- var page = "experts-inner"
+
+block content
+	.container
+		.content
+			.row
+				include ../modules/left-column
+				// Основной контент
+				main.page-center-column.col-lg-6
+					h1.heading Думка експерта
+					.news-line
+						.box
+							h2.title Через війну з РФ вступ до НАТО - не близька перспектива
+							.box-head
+								time(datetime='2017-07-07T17:30') 07.07.2017 17:30
+								.box-head-more
+									span.box-head-watch 250
+									span.box-head-comment 0
+							.box-body
+								.box-body-head
+									.image-block
+										img(src='static/img/sidebar/news-line_photo.png', width='243', height='218', alt='Image')
+									.text-block
+										h3 Володимир Фесенко Директор Центру політичних досліджень "Пента"
+										a(href='experts.html') Усі статті
+								.text-content
+									p
+										| Президент Порошенко підписав закон "Про внесення змін в деякі закони України щодо зовнішньополітичного курсу України", яким встановлюється курс України на членство в НАТО.
+									h3.subtitle Що це означає?
+									p
+										| Перш за все це означає законодавче закріплення євроатлантичної інтеграції (спрямованості на членство в НАТО) як одного з головних зовнішньополітичних пріоритетів України. Де-юре закріплюється те, що вже здійснюється на практиці останні 3 роки, і одночасно визначається в статусі закону геополітичний орієнтир на майбутнє.
+										br
+										| Перш за все це означає законодавче закріплення євроатлантичної інтеграції (спрямованості на членство в НАТО) як одного з головних зовнішньополітичних пріоритетів України. Де-юре закріплюється те, що вже здійснюється на практиці останні 3 роки, і одночасно визначається в статусі закону геополітичний орієнтир на майбутнє.
+
+
+						.box.last
+							.box-body
+								.text-content
+									blockquote
+										p
+											q
+												| Перш за все це означає законодавче закріплення євроатлантичної інтеграції (спрямованості на членство в НАТО) як одного з головних зовнішньополітичних пріоритетів України. Де-юре закріплюється те, що вже здійснюється на практиці останні 3 роки, і одночасно визначається в статусі закону геополітичний орієнтир на майбутнє.
+
+									a(class="link-share" href="javascript:void(0);")
+										| Поділитися
+										span.link-share-comment
+									em
+										| Думка редакції може відрізнятися від авторської. Редакція сайту не несе відповідальності за зміст цієї публікації.
+							.socials-links
+								a.socials-link.socials-link-fb(href='javascript:void(0);')
+								a.socials-link.socials-link-tweet(href='javascript:void(0);')
+								a.socials-link.socials-link-comment(href='javascript:void(0);')
+									span Коментувати
+						.news-line-tags
+							span Теги:
+							a(href='javascript:void(0);') м.Київ
+							a(href='javascript:void(0);') відео новина
+							a(href='javascript:void(0);') ДТП
+							a(href='javascript:void(0);') ДТП Київ
+							a(href='javascript:void(0);') ДТП Киев
+							a(href='javascript:void(0);') Київ ЧП.INFO
+						.news-line-stuff
+							span За матеріалами:
+							a(href='javascript:void(0);') Прес-служби ДСНС у Дніпропетровській області.
+						.primary-breadcrumbs
+							ul
+								li
+									a(href='index.html') Головна
+								li
+									a(href='news.html') Стрічка новин
+								li.active
+									span Події
+						.box-more
+							h2.box-more-title ЧИТАЙТЕ ТАКОЖ
+							.box-more-content
+								.box-more-content-image
+									a(href='experts-inner.html')
+										img(src='static/img/sidebar/news-line_photo.png', width='243', height='218', alt='Image')
+								.box-more-content-text
+									a(href='experts-inner.html')
+										h3
+											| Валентин Гладких
+											br
+											|  Кандидат філософських наук,
+											br
+											|  експерт ГО «Слово і Діло»
+									time(datetime='2017-07-06T17:30') 06.07.2017  17:30
+									a.bottom-link(href='quiz.html') Чи зможе суд довести держзраду Януковича?
+							a.learn-more-link(href='experts-inner.html')
+						.box-more
+							.box-more-content
+								.box-more-content-image
+									a(href='experts-inner.html')
+										img(src='static/img/sidebar/news-line_photo.png', width='243', height='218', alt='Image')
+								.box-more-content-text
+									a(href='experts-inner.html')
+										h3
+											| Валентин Гладких
+											br
+											|  Кандидат філософських наук,
+											br
+											|  експерт ГО «Слово і Діло»
+									time(datetime='2017-07-06T17:30') 06.07.2017  17:30
+									a.bottom-link(href='quiz.html') Чи зможе суд довести держзраду Януковича?
+							a.learn-more-link(href='experts-inner.html')
+						.box-more.last
+							.box-more-content
+								.box-more-content-image
+									a(href='experts-inner.html')
+										img(src='static/img/sidebar/news-line_photo.png', width='243', height='218', alt='Image')
+								.box-more-content-text
+									a(href='experts-inner.html')
+										h3
+											| Валентин Гладких
+											br
+											|  Кандидат філософських наук,
+											br
+											|  експерт ГО «Слово і Діло»
+									time(datetime='2017-07-06T17:30') 06.07.2017  17:30
+									a.bottom-link(href='quiz.html') Чи зможе суд довести держзраду Януковича?
+							a.learn-more-link(href='experts-inner.html')
+						.text-center.box-pagination
+							ul.pagination
+								li.prev
+									a(href='javascript:void(0);') <
+								li
+									a(href='javascript:void(0);') 1
+								li
+									a(href='javascript:void(0);') 2
+								li
+									a(href='javascript:void(0);') 3
+								li
+									a(href='javascript:void(0);') 4
+								li.active
+									a(href='javascript:void(0);') 5
+								li.next
+									a(href='javascript:void(0);') >
+
+				include ../modules/right-column

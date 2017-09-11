@@ -1,0 +1,178 @@
+extends ../layout/main
+
+block title
+	| Шукаю свідків
+
+	- var page = "search-advert"
+
+block content
+	.container
+		.content
+			.row
+				include ../modules/left-column
+				// Основной контент
+				main.page-center-column.col-lg-6
+					h1.heading ШУКАЮ СВІДКІВ
+					.news-line
+						.box
+							h2.title Подати оголошення в проект «ШУКАЮ СВІДКІВ!»
+							.box-head
+								time(datetime='2017-07-07T17:30') 07.07.2017 17:30
+								.box-head-more
+									span.box-head-watch 250
+									span.box-head-comment 0
+							.box-body
+								.image-block
+								.text-content
+									p
+										| Проект «ШУКАЮ СВІДКІВ!» створено для тих, хто потрапив у біду (зниклі безвісті, ДТП, підпал, угон, крадіжка майна, тяжкі злочинів проти життя і здоров´я людини, ) і кому для встановлення істини конче потрібна допомога свідків події.
+										br
+										| Залиште інформацію про вашу подію на сайті - можливо свідки теж вас шукають!
+									span.alert-text Розміщення оголошення безкоштовне.
+									p
+										| Для публікації оголошення вам потрібно ознайомитись з &nbsp;
+										a(href='#sect-rules') Правила подачі оголошення
+										| , уважно заповнити &nbsp;
+										a(href='#sect-form') Форма оголошення
+										|  та натиснути «Публікувати».
+									p
+										| Після розгляду Адміністрацією сайту ваше оголошення буде розміщене на сторінці Проекту.
+										| Термін розміщення оголошення – 1 календарний місяць з моменту публікації. Після закінчення терміну розміщення оголошення буде видалено.
+									p
+										| У разі потреби оголошення можна опублікувати ще раз, знов заповнивши Форму оголошення
+						.box.box-rules#sect-rules
+							h2.title Правила подачі оголошення
+							.box-body
+								.text-content
+									p
+										| Забороняється:
+										br
+										|                    набирати оголошення ЗАГОЛОВНИМИ літерами;
+										br
+										|                    використовувати в тексті оголошення символи або літери, що не мають відношення до змісту оголошення;
+										br
+										|                    реклама та антиреклама продуктів та послуг;
+										br
+										|                    Не розміщуються оголошення:
+										br
+										|                    що суперечать законам України;
+										br
+										|                    наклепницького змісту, такі, що ображають релігійні та політичні погляди, або порушують расову та гендерну рівність;
+										br
+										|                    Адміністрація сайту залишає за собою право на:
+										br
+										|                    редагування тексту оголошення;
+										br
+										|                    зміни категорії оголошення;
+										br
+										|                    видалення оголошень без пояснення причин.
+										br
+										|                    Адміністрація сайту не несе відповідальності:
+										br
+										|                    за достовірність оголошень;
+										br
+										|                    за зміст оголошень;
+										br
+										|                    за можливий заподіяний збиток або обман.
+										br
+										|                    У випадку пред'явлення Адміністрації сайту претензій зі сторони третіх осіб у зв'язку з інформацією, яка розміщується Автором оголошення на сайті (в тому числі і претензії зі сторони власників авторських прав та/або суміжних прав, їх уповноважених представників чи третіх осіб), Автор оголошення зобов'язаний самостійно і за власний рахунок врегульовувати і вирішувати всі спори з особами, що подали претензії, а також відшкодувати понесені Адміністрацією сайта збитки у повному обсязі.
+						.box.last.box-form#sect-form
+							.news-line-form
+								h2.title Форма оголошення
+								form(action='#')
+									.news-line-form-block
+										label(for='user-name') Ім'я
+										input#user-name(name='usr-name', type='text', required='')
+									.news-line-form-block
+										label(for='user-email') E-mail
+										input#user-email(name='usr-email', type='email', required='')
+									.news-line-form-block
+										label(for='user-phone') Контактний телефон
+										input#user-phone(name='usr-name', type='text', required='')
+									.news-line-form-block
+										table.select-table
+											tbody.select-table-body
+												tr
+													td
+														input#event-1(type='radio', name='event', value='category-event')
+														label(for='event-1') Категорія події
+													td Вибрати
+												tr.highlight
+													td
+														input#event-2(type='radio', name='event', value='date-event')
+														label(for='event-2') Дата події
+													td Вибрати
+												tr
+													td
+														input#event-3(type='radio', name='event', value='hour-event')
+														label(for='event-3') Час події
+													td Вибрати
+												tr.highlight
+													td
+														input#event-4(type='radio', name='event', value='region-event')
+														label(for='event-4') Область
+													td Вибрати
+												tr
+													td
+														input#event-5(type='radio', name='event', value='locality-event')
+														label(for='event-5') Населений пункт
+													td Вибрати
+												tr.highlight
+													td
+														input#event-6(type='radio', name='event', value='street-event')
+														label(for='event-6') Вулиця
+													td Вибрати
+												tr
+													td
+														input#event-7(type='radio', name='event', value='track-event')
+														label(for='event-7') Траса
+													td Вибрати
+									.news-line-form-block.news-line-form-block--last
+										label(for='user-message') Текст оголошення:
+										textarea#user-message(name='usr-message')
+									.news-line-form-block.news-line-form-block--last
+										input#file-upload(type='file')
+										label.small-link(for='file-upload') Додати фото
+									.news-line-form-block.news-line-form-block--last
+										a.small-link(href='#') Перегляд оголошення
+									.news-line-form-block.news-line-form-block--last
+										.radio-buttons
+											input#q-yes(name='question', type='radio', value='yes', checked='')
+											label(for='q-yes') Так
+											input#q-no(name='question', type='radio', value='no')
+											label(for='q-no') Ні
+										p.text
+											| Згоден з &nbsp;
+											a.small-link(href='#')
+												| Правила подачі оголошення
+									.news-line-form-block.news-line-form-block--captcha
+										label(for='user-captcha') Введіть код
+										.captcha-img
+											img(src='static/img/captcha.jpg', width='264', height='73', alt='Captcha image')
+										input#user-captcha(name='usr-captcha', type='text', required='')
+									button(type='submit') Опублікувати оголошення
+							.socials-links
+								a.socials-link.socials-link-fb(href='javascript:void(0);')
+								a.socials-link.socials-link-tweet(href='javascript:void(0);')
+								a.socials-link.socials-link-comment(href='javascript:void(0);')
+									span Коментувати
+
+						p.news-line-join Приєднуйтесь до "Магнолія-ТВ" на Facebook!
+						.news-line-tags
+							span Теги: &nbsp;
+							a(href='javascript:void(0);') Оголошення
+							a(href='javascript:void(0);') Подати оголошення
+							a(href='javascript:void(0);') Шукаю свідків
+						.news-line-stuff
+							span За матеріалами: &nbsp;
+							a(href='javascript:void(0);') Магнолія-ТВ
+						.primary-breadcrumbs
+							ul
+								li
+									a(href='index.html') Головна
+								li
+									a(href='news.html') Шукаю свідків
+								li.active
+									span Подати оголошення
+
+				include ../modules/right-column

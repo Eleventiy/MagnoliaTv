@@ -1,188 +1,125 @@
 @import "../modules/_vars"
 
 .blog-page
-	position: relative
-	max-width: 1920px
-	min-height: 100%
-	margin: auto
-	.content
-		max-width: 1170px
-		margin: auto
-		padding-top: 35px
-		.row
-			max-width: 1170px
-			main.page-center-column
-				position: relative
-				left: -20px
-				padding: 0
-				h1.heading
-					position: relative
-					left: 17px
+	.container
+		.content
+			margin-top: 0
+	.news-line
+		margin-top: 17px
+		margin-bottom: 20px
+		.box
+			display: flex
+			position: relative
+			padding: 20px 0
+			border-top: 3px solid #5e98bd
+			.learn-more-link
+				position: absolute
+				bottom: 10px
+				right: 0
+				width: 23px
+				height: 17px
+				background: url('../img/icons/arrow_read-more.png') no-repeat
+				cursor: pointer
+				-webkit-transition: .3s ease-in-out
+				-moz-transition: .3s ease-in-out
+				-ms-transition: .3s ease-in-out
+				-o-transition: .3s ease-in-out
+				transition: .3s ease-in-out
+			&:hover
+				& .learn-more-link
+					background: url('../img/icons/arrow_read-more-hov.png') no-repeat
+			a
+				text-decoration: none
+				.title
+					&:hover
+						color: $color_10
+			.img
+				float: left
+				outline: none
+				overflow: hidden
+				max-height: 175px
+			.text-part
+				display: inline-block
+				max-width: 325px
+				padding-left: 15px
+				a
+					text-decoration: none
+				.title
 					display: inline-block
-					min-width: 250px
-					padding: 12px 30px
-					font-size: 19px
-					color: $color_1
-					text-transform: uppercase
+					color: $color_7
+					font-size: 18.75px
 					font-family: $font_family_1
-					background: #1f4c6a
-					border-radius: 0 30px 30px 0
-					&:before
-						content: url('../img/icons/ul-label-nav.png')
-						position: absolute
-						z-index: 2
-						top: 0
-						left: -30px
-				.filter
-					top: 8px
-					position: relative
-					label
-						display: inline-block
-						font-size: 17px
-						color: #1f4c6a
-						font-family: $font_family_1
-						font-weight: 600
-						line-height: 29px
-					.filter_news_custom_select
-						display: inline-block
+					font-weight: 600
+					margin: 0
+					line-height: 26px
+					transition: 0.3s ease-in-out
+					margin-bottom: 10px
+				.data
+					margin: 0
+					color: $color_10
+					transition: 0.3s ease-in-out
+					font-weight: 600
+					margin-bottom: 10px
+					&:hover
+						color: $color_7
+				.box-more
+					position: absolute
+					bottom: 20px
+					font-weight: 600
+					color: $color_9
+					span
 						position: relative
-						color: #2ba4f5
-						font-size: 17px
-						font-family: $font_family_1
-						font-weight: 600
-						margin-left: 12px
-						margin-right: 21px
-						line-height: 29px
-						b
-							position: relative
-							left: 3px
-						.filter_news_custom_option
-							display: none
+						padding-left: 30px
+					&-watch
+						&::before
+							content: ''
 							position: absolute
-							list-style-type: none
-							margin: 0
-							min-width: 180px
-							background: rgba(254,254,254,1)
-							padding: 15px
-							border-radius: 0 0 14px 14px
-							li
-								padding: 5px
-				.news-line
-					margin-top: 17px
-					margin-bottom: 20px
-					.box
-						display: flex
-						position: relative
-						padding: 20px 0
-						border-top: 3px solid #5e98bd
-						.learn-more-link
+							top: 3px
+							left: 0
+							width: 24px
+							height: 24px
+							background-repeat: no-repeat
+							background-image: url('../img/icons/eye-icon.png')
+					&-comment
+						margin-left: 20px
+						&::before
+							content: ''
 							position: absolute
-							bottom: 10px
-							right: 0
-							width: 23px
-							height: 17px
-							background: url('../img/icons/arrow_read-more.png') no-repeat
-							cursor: pointer
-							-webkit-transition: .3s ease-in-out
-							-moz-transition: .3s ease-in-out
-							-ms-transition: .3s ease-in-out
-							-o-transition: .3s ease-in-out
-							transition: .3s ease-in-out
-						&:hover
-							& .learn-more-link
-								background: url('../img/icons/arrow_read-more-hov.png') no-repeat
+							top: 3px
+							left: 0
+							width: 24px
+							height: 24px
+							background-repeat: no-repeat
+							background-image: url('../img/icons/comment-icon.png')
+		.box.last
+			border-bottom: 3px solid #5e98bd
+		.box-pagination
+			margin-top: 41px
+			margin-bottom: 20px
+			text-align: center
+			.pagination
+				max-width: 225px
+				margin: auto
+				.active
+					color: $color_7
+					a
+						color: $color_7
+				li
+					font-size: 17px
+					font-family: $font_family_1
+					font-weight: 600
+					color: $color_10
+					padding: 0 12.3px
+					&:hover
+						color: $color_7
 						a
-							text-decoration: none
-							.title
-								&:hover
-									color: $color_10
-						.img
-							float: left
-							outline: none
-							overflow: hidden
-							max-height: 175px
-						.text-part
-							display: inline-block
-							max-width: 325px
-							padding-left: 15px
-							a
-								text-decoration: none
-							.title
-								display: inline-block
-								color: $color_7
-								font-size: 18.75px
-								font-family: $font_family_1
-								font-weight: 600
-								margin: 0
-								line-height: 26px
-								transition: 0.3s ease-in-out
-								margin-bottom: 10px
-							.data
-								margin: 0
-								color: $color_10
-								transition: 0.3s ease-in-out
-								font-weight: 600
-								margin-bottom: 10px
-								&:hover
-									color: $color_7
-							.box-more
-								position: absolute
-								bottom: 20px
-								font-weight: 600
-								color: $color_9
-								span
-									position: relative
-									padding-left: 30px
-								&-watch
-									&::before
-										content: ''
-										position: absolute
-										top: 3px
-										left: 0
-										width: 24px
-										height: 24px
-										background-repeat: no-repeat
-										background-image: url('../img/icons/eye-icon.png')
-								&-comment
-									margin-left: 20px
-									&::before
-										content: ''
-										position: absolute
-										top: 3px
-										left: 0
-										width: 24px
-										height: 24px
-										background-repeat: no-repeat
-										background-image: url('../img/icons/comment-icon.png')
-					.box.last
-						border-bottom: 3px solid #5e98bd
-					.box-pagination
-						margin-top: 41px
-						margin-bottom: 20px
-						text-align: center
-						.pagination
-							max-width: 225px
-							margin: auto
-							.active
-								color: $color_7
-								a
-									color: $color_7
-							li
-								font-size: 17px
-								font-family: $font_family_1
-								font-weight: 600
-								color: $color_10
-								padding: 0 12.3px
-								&:hover
-									color: $color_7
-									a
-										color: $color_7
-								a
-									font-size: 17px
-									font-family: $font_family_1
-									font-weight: 600
-									color: $color_10
-									text-decoration: none
+							color: $color_7
+					a
+						font-size: 17px
+						font-family: $font_family_1
+						font-weight: 600
+						color: $color_10
+						text-decoration: none
 	aside.page-right-column
 		.content-box
 			.quiz,

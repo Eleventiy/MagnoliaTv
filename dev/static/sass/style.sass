@@ -22,6 +22,7 @@ img
 @import "modules/_footer"
 
 // Внутренние страницы
+@import "pages/_inner-page"
 @import "pages/_about"
 @import "pages/_blog"
 @import "pages/_blog-inner"
@@ -39,10 +40,243 @@ img
 @import "pages/_search-inner"
 @import "pages/_search-advert"
 @import "pages/_socials"
-@import "pages/_inner-page"
 
 // Левая колонка внутренних страниц
 @import "modules/_left-column"
 	
 // Правая колонка внутренних страниц
 @import "modules/_right-column"
+
+// Модальное окно
+.popup-modal
+	display: none
+	position: fixed
+	top: 30%
+	left: 50%
+	z-index: 9999
+	width: 490px
+	padding: 30px 45px
+	font-weight: 600
+	text-align: center
+	background-color: $color_1
+	transform: translate(-50%, -30%)
+	&__title
+		display: block
+		margin-bottom: 30px
+		color: $color_4
+	button:focus
+		outline: none
+	&__close
+		position: absolute
+		top: 20px
+		right: 10px
+		display: block
+		width: 14px
+		height: 14px
+		border: none
+		background: transparent
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			right: 10px
+			width: 14px
+			height: 2px
+			background-color: #b7b7b7
+			-webkit-transform: rotate(45deg)
+			-moz-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			-o-transform: rotate(45deg)
+			transform: rotate(45deg)
+		&::after
+			content: ''
+			position: absolute
+			right: 10px
+			width: 14px
+			height: 2px
+			background-color: #b7b7b7
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+	&__form
+		color: $color_4
+		font-family: $font_family_1
+		font-size: 21px
+		text-align: left
+		&__title
+			margin-bottom: 25px
+			font-size: 25px
+			line-height: 29px
+			text-transform: uppercase
+		label
+			margin-bottom: 0
+			color: $color_7
+			cursor: pointer
+		&__input
+			margin-bottom: 15px
+			input
+				-webkit-box-sizing: border-box
+				-moz-box-sizing: border-box
+				box-sizing: border-box
+				display: block
+				width: 100%
+				height: 44px
+				border: 2px solid #b7b7b7
+				outline: none
+				padding: 6px 10px
+				color: $color_7
+				font-family: $font_family_1
+				font-size: 16px
+				line-height: 1.5
+				font-weight: 600
+		&__remember
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 30px
+			label
+				position: relative
+				padding-left: 30px
+				color: $color_7
+			a
+				font-size: 16.67px
+				color: $color_4
+			input[type="checkbox"]
+				display: none
+				&+label
+					&::before
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0
+						width: 20px
+						height: 20px
+						margin-top: -10px
+						background-color: $background_color_1
+						-webkit-transition: background-color 0.25s
+						-moz-transition: background-color 0.25s
+						-ms-transition: background-color 0.25s
+						-o-transition: background-color 0.25s
+						transition: background-color 0.25s
+				&:hover
+					&+label
+						&::before
+							background-color: $background_color_2
+				&:checked
+					&+label
+						&::before
+							background-color: $background_color_2
+						&::after
+							content: ''
+							position: absolute
+							left: 5px
+							top: 15px
+							background: white
+							width: 2px
+							height: 2px
+							box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
+							-webkit-transform: rotate(45deg)
+							transform: rotate(45deg)
+		&__btn
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box
+			display: block
+			width: 100%
+			margin-bottom: 40px
+			color: $color_1
+			font-size: 18.75px
+			font-weight: 600
+			line-height: 40px
+			text-transform: uppercase
+			border: 3px solid transparent
+			background: $color_4
+			-webkit-border-radius: 45px
+			-moz-border-radius: 45px
+			border-radius: 45px
+			cursor: pointer
+			-webkit-transition: .3s ease-in-out
+			-moz-transition: .3s ease-in-out
+			-ms-transition: .3s ease-in-out
+			-o-transition: .3s ease-in-out
+			transition: .3s ease-in-out
+			&:hover
+				color: $color_4
+				background: $color_1
+				border-color: $color_4
+	&__social
+		position: relative
+		padding: 30px 20px
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			left: -45px
+			width: 490px
+			height: 3px
+			background-color: $color_4
+		&::before
+			top: 0
+		&::after
+			bottom: 0
+		&__links
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__link
+			width: 100%
+			height: 35px
+			font-size: 0
+			&--rss
+				background: url('../img/icons/rss_blue.png') no-repeat
+			&--fb
+				background: url('../img/icons/facebook_blue.png') no-repeat
+			&--tw
+				background: url('../img/icons/tweet_blue.png') no-repeat
+			&--google
+				background: url('../img/icons/google_blue.png') no-repeat
+			&--youtube
+				background: url('../img/icons/youtube_blue.png') no-repeat
+	&__register
+		padding-top: 30px
+		&__link
+			display: block
+			margin-bottom: 35px
+			font-size: 18.75px
+			line-height: 40px
+			color: $color_1
+			text-transform: uppercase
+			text-decoration: none
+			border: 3px solid transparent
+			background-color: $color_7
+			-webkit-border-radius: 45px
+			-moz-border-radius: 45px
+			border-radius: 45px
+			-webkit-transition: .3s ease-in-out
+			-moz-transition: .3s ease-in-out
+			-ms-transition: .3s ease-in-out
+			-o-transition: .3s ease-in-out
+			transition: .3s ease-in-out
+			&:hover
+				text-decoration: none
+				color: $color_7
+				background: $color_1
+				border-color: $color_7
+		p
+			color: $color_7
+			font-size: 17px
+			a
+				color: $color_10
+// Подложка модального окна
+.popup-overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9998
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.8)
+	cursor: pointer

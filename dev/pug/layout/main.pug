@@ -1,16 +1,15 @@
 doctype html
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		link(href='static/css/bootstrap.min.css', rel='stylesheet')
-		link(href='static/css/style.css', rel='stylesheet')
-		link(href='static/css/responsive.css', rel='stylesheet')
+head
+	meta(charset='UTF-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	link(href='static/css/bootstrap.min.css', rel='stylesheet')
+	link(href='static/css/style.css', rel='stylesheet')
+	link(href='static/css/responsive.css', rel='stylesheet')
 	title
 		block title
 
 	body
-
-		section(class= page + '-page')
+		section(class=(page === 'main' ? page + '-page' : page + '-page inner-page'))
 			include ../modules/header
 			block content
 			include ../modules/footer

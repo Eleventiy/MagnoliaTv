@@ -18,31 +18,34 @@ var gulp = require('gulp'),
 		newer = require("gulp-newer"),
 		autoprefixer = require('gulp-autoprefixer');
 
-// Работа с Pug
-gulp.task('pug', function() {
-	return gulp.src('dev/pug/**/*.pug')
-		.pipe(plumber())
+// Работа с Sass
+gulp.task('sass', function () {
+	return gulp.src('dev/static/sass/*.sass')
+		.pipe(sass({outputStyle: 'compressed'}))
 		.on("error", notify.onError(function(error) {
 			return "Message to the notifier: " + error.message;
 		}))
-		.pipe(gulp.dest('dev'))
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('dev/static/css'))
 		.pipe(browsersync.reload({
 			stream: true
 		}));
 });
 
-// Работа с Sass
-gulp.task('sass', function () {
-	return gulp.src('dev/static/sass/**/*.sass')
-		.pipe(sass({outputStyle: 'compressed'}))
+// Работа с Pug
+gulp.task('pug', function() {
+	return gulp.src('dev/pug/pages/*.pug')
+		.pipe(plumber())
+		.pipe(pug({
+			pretty: true
+		}))
 		.on("error", notify.onError(function(error) {
 			return "Message to the notifier: " + error.message;
 		}))
-		.pipe(autoprefixer(['last 2 version']))
-		.pipe(gulp.dest('dev/static/css/'))
-		.pipe(browsersync.reload({
-			stream: true
-		}));
+		.pipe(gulp.dest('dev'));
 });
 
 // Browsersync
@@ -130,7 +133,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 			progressive: true,
 			use: [pngquant()]
 		}))
-		.pipe(gulp.dest('product/static/img/'));
+		.pipe(gulp.dest('production/static/img/'));
 });
 
 // Очистка кеша

@@ -34,14 +34,86 @@
 			z-index: 2
 			top: 0
 			left: -30px
+	.news-line
+		margin-top: 17px
+		margin-bottom: 20px
+		.box-pagination
+			margin-top: 41px
+			margin-bottom: 20px
+			text-align: center
+			.pagination
+				max-width: 225px
+				margin: auto
+				.active
+					color: $color_7
+					a
+						color: $color_4
+				li
+					font-size: 17px
+					font-family: $font_family_1
+					font-weight: 600
+					color: $color_10
+					padding: 0 12.3px
+					&:hover
+						color: $color_7
+						a
+							color: $color_7
+					a
+						font-size: 17px
+						font-family: $font_family_1
+						font-weight: 600
+						color: $color_10
+						text-decoration: none
+		.box.last
+			border-bottom: 3px solid #5e98bd
+		.news-line-tags
+			margin-top: 20px
+			font-family: $font_family_1
+			font-weight: 600
+			span
+				font-size: 15px
+				color: $color_4
+			a
+				margin-right: 5px
+				text-decoration: none
+				color: $color_18
+			&-join
+				margin: 10px 0
+				color: $color_7
+				font-size: 18px
+				line-height: 40px
+				font-weight: 600
+			&-stuff
+				font-family: $font_family_1
+				font-weight: 600
+				span
+					font-size: 15px
+					color: $color_9
+				a
+					margin-right: 5px
+					text-decoration: none
+					color: $color_7
+		.news-line-stuff
+			font-family: $font_family_1
+			font-weight: 600
+			span
+				font-size: 15px
+				color: $color_4
+			a
+				margin-right: 5px
+				text-decoration: none
+				color: $color_18
+		.news-line-join
+			margin-top: 15px
+			font-size: 18px
+			font-weight: 600
+			color: $color_7
 	.socials-links
 		display: flex
 		justify-content: flex-start
 		align-items: center
 		margin-top: 20px
 		.socials-link
-			-webkit-box-sizing: border-box
-			-moz-box-sizing: border-box
 			box-sizing: border-box
 			display: flex
 			align-items: center
@@ -51,14 +123,8 @@
 			margin-right: 10px
 			color: #004b6c
 			border: 2px solid #004b6c
-			-webkit-border-radius: 40px
-			-moz-border-radius: 40px
 			border-radius: 40px
 			background-color: $color_1
-			-webkit-transition: .1s linear
-			-moz-transition: .1s linear
-			-ms-transition: .1s linear
-			-o-transition: .1s linear
 			transition: .1s linear
 			text-decoration: none
 			&::before
@@ -66,10 +132,6 @@
 				position: absolute
 				top: 50%
 				left: 50%
-				-webkit-transform: translate(-50%, -50%)
-				-moz-transform: translate(-50%, -50%)
-				-ms-transform: translate(-50%, -50%)
-				-o-transform: translate(-50%, -50%)
 				transform: translate(-50%, -50%)
 			&:hover
 				color: $color_1
@@ -104,22 +166,22 @@
 					&::before
 						background: url('../img/icons/comment-white.png') no-repeat
 	.filter
-		top: 8px
-		position: relative
+		margin: 15px 0
 		.filter-column
 			display: inline-block
 		label
 			display: inline-block
-			font-size: 17px
+			font-size: 18px
 			color: #1f4c6a
 			font-family: $font_family_1
 			font-weight: 600
 			line-height: 29px
+			margin-bottom: 0
 		.filter_news_custom_select
 			display: inline-block
 			position: relative
 			color: #2ba4f5
-			font-size: 17px
+			font-size: 18px
 			font-family: $font_family_1
 			font-weight: 600
 			margin-left: 12px
@@ -149,8 +211,7 @@
 			position: relative
 			width: 140px
 			height: 18px
-			margin-left: 10px
-			color: $color_10
+			color: $color_4
 			font-weight: 600
 			cursor: pointer
 		.select-styled
@@ -159,9 +220,6 @@
 			right: 0
 			bottom: 0
 			left: 0
-			-moz-transition: all 0.2s ease-in
-			-o-transition: all 0.2s ease-in
-			-webkit-transition: all 0.2s ease-in
 			transition: all 0.2s ease-in
 			&::after
 				content: ""
@@ -173,10 +231,7 @@
 				display: inline-block
 				padding: 3px
 				transform: rotate(45deg)
-				-webkit-transform: rotate(45deg)
 		.select-options
-			-webkit-box-sizing: border-box
-			-moz-box-sizing: border-box
 			box-sizing: border-box
 			display: none
 			position: absolute
@@ -188,18 +243,11 @@
 			padding: 15px
 			list-style: none
 			background-color: $color_1
-			-webkit-border-radius: 0 0 14px 14px
-			-moz-border-radius: 0 0 14px 14px
 			border-radius: 0 0 14px 14px
-			-webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
-			-moz-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.5)
 			box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.5)
 			li
 				margin: 0
 				padding: 5px
-				-moz-transition: all 0.15s ease-in
-				-o-transition: all 0.15s ease-in
-				-webkit-transition: all 0.15s ease-in
 				transition: all 0.15s ease-in
 				line-height: 2
 				&:hover
@@ -207,47 +255,16 @@
 
 				&[rel="hide"]
 					display: none
-	.box-pagination
-		margin-top: 41px
-		margin-bottom: 20px
-		text-align: center
-		.pagination
-			max-width: 225px
-			margin: auto
-			.active
-				color: $color_7
-				a
-					color: $color_7
-			li
-				font-size: 17px
-				font-family: $font_family_1
-				font-weight: 600
-				color: $color_10
-				padding: 0 12.3px
-				&:hover
-					color: $color_7
-					a
-						color: $color_7
-				a
-					font-size: 17px
-					font-family: $font_family_1
-					font-weight: 600
-					color: $color_10
-					text-decoration: none
 	.link-share
 		position: relative
 		display: block
 		margin-top: 10px
 		margin-left: auto
 		padding-right: 55px
-		color: $color_9
+		color: $color_4
 		font-weight: 600
 		text-decoration: none
 		text-align: right
-		-webkit-transition: .3s ease-in-out
-		-moz-transition: .3s ease-in-out
-		-ms-transition: .3s ease-in-out
-		-o-transition: .3s ease-in-out
 		transition: .3s ease-in-out
 		&:hover
 			color: $color_7
@@ -286,14 +303,10 @@
 				&::after
 					content: ''
 		a
-			color: $color_16
+			color: $color_4
 			text-decoration: none
 			font-size: 15px
 			font-weight: 600
-			-webkit-transition: .3s ease-in-out
-			-moz-transition: .3s ease-in-out
-			-ms-transition: .3s ease-in-out
-			-o-transition: .3s ease-in-out
 			transition: .3s ease-in-out
 			&:hover
 				color: $color_7

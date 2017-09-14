@@ -5,7 +5,6 @@
 		.content
 			margin-top: 0
 	.news-line
-		margin-top: 17px
 		margin-bottom: 40px
 		.box
 			position: relative
@@ -14,7 +13,7 @@
 			h2.title
 				text-transform: none
 				display: inline-block
-				color: #1f4c6a
+				color: $color_18
 				font-size: 23px
 				font-family: "Open Sans", Tahoma, sans-serif
 				font-weight: 600
@@ -120,8 +119,6 @@
 					width: 160px
 					padding: 10px 35px
 					color: $color_1
-					-webkit-border-radius: 40px
-					-moz-border-radius: 40px
 					border-radius: 40px
 					text-decoration: none
 					&::before
@@ -132,10 +129,6 @@
 						width: 1px
 						height: 50%
 						background-color: $color_1
-						-webkit-transform: translate(-50%, -50%)
-						-moz-transform: translate(-50%, -50%)
-						-ms-transform: translate(-50%, -50%)
-						-o-transform: translate(-50%, -50%)
 						transform: translate(-50%, -50%)
 					&-fb
 						background-color: $color_7
@@ -148,56 +141,12 @@
 						&::before
 							left: 75%
 		.box.last
-			border-bottom: 3px solid #5e98bd
 			.text-content
 				margin-top: 0
-		.news-line-tags
-			margin-top: 20px
-			font-family: $font_family_1
-			font-weight: 600
-			span
-				font-size: 15px
-				color: $color_14
-			a
-				margin-right: 5px
-				text-decoration: none
-				color: $color_13
-		.news-line-stuff
-			font-family: $font_family_1
-			font-weight: 600
-			span
-				font-size: 15px
-				color: $color_9
-			a
-				margin-right: 5px
-				text-decoration: none
-				color: $color_7
+
+
 		.box-pagination
 			margin-top: 20px
-			text-align: center
-			.pagination
-				max-width: 225px
-				margin: auto
-				.active
-					color: $color_7
-					a
-						color: $color_7
-				li
-					font-size: 17px
-					font-family: $font_family_1
-					font-weight: 600
-					color: $color_10
-					padding: 0 12.3px
-					&:hover
-						color: $color_7
-						a
-							color: $color_7
-					a
-						font-size: 17px
-						font-family: $font_family_1
-						font-weight: 600
-						color: $color_10
-						text-decoration: none
 		.box-more
 			position: relative
 			margin-top: 10px
@@ -211,10 +160,6 @@
 				height: 17px
 				background: url('../img/icons/arrow_read-more.png') no-repeat
 				cursor: pointer
-				-webkit-transition: .3s ease-in-out
-				-moz-transition: .3s ease-in-out
-				-ms-transition: .3s ease-in-out
-				-o-transition: .3s ease-in-out
 				transition: .3s ease-in-out
 			&:hover
 				& .learn-more-link

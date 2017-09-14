@@ -1,14 +1,718 @@
 @import "modules/_vars"
 
-/*==========  Mobile First Method  ==========*/
-@media only screen and (min-width : 360px)
-	// Selectors
+// ####################
+@media(max-width: 768px) and (min-width : 360px)
+	// Шапка сайта
+	header.main-header
+		background: rgba(#0083b3, 0.83)
+		height: 55px
+		//.header-container
+		//	padding: 0
+		.top-line
+			padding-top: 11px
+			&__link
+				top: 1px
+				left: 0
+				img
+					top: 0
+					width: 19px
+					margin-right: 0
+				span
+					display: none
+			&__logo
+				position: relative
+				top: 4px
+				left: -77px
+				align-self: center
+				img
+					max-width: 166px
+					margin-left: 0
+			&__right
+				align-self: center
+				top: 2px
+				right: 13px
+				text-align: center
+			&__login
+				position: relative
+				left: -6px
+				img
+					width: 18px
+					margin-left: 0
+			&__lang
+				left: 13px
+				bottom: 0
+				span
+					font-size: 15px
+					line-height: 8.98px
+				img
+					width: 16px
+					margin-left: 0
+				&__list
+					top: 42px
+					right: -9px
+					width: 80px
+					li
+						padding: 5px
+						font-size: 15px
+			.popup-nav
+				top: -18px
+				left: 0
+				width: 300px
+				background: $color_4
+				box-shadow: 250px 27px 50px rgba(#000, 0.25)
+				&__list
+					padding: 50px 0 0 43px
+					li
+						font-size: 18.75px
+						line-height: 35px
+					&__item
+						margin-bottom: 12px
+						&--first
+							margin-bottom: 17px
+				&__sublist
+					margin-top: 8px
+					padding-left: 15px
+					&__item
+						font-size: 16.75px
+						margin-bottom: 0
 
-@media only screen and (min-width : 768px)
-	// Selectors
+	// Главная страница
+	.main-page
+		background: url('../img/bg-main-page(small).png')
+		background-size: 100%
+		justify-content: flex-start
+		main
+			margin-bottom: 0
+		.container
+			h1
+				margin-top: 20px
+				margin-bottom: 0
+				font-size: 24.28px
+				line-height: 36px
+				letter-spacing: 3px
+			.main-logo
+				width: 80%
+				margin-top: 19px
+				margin-left: 0
+			.block
+				display: block
+				width: 90%
+				margin: auto
+				margin-top: 33px
+				background: none
+				.box
+					display: flex
+					align-items: center
+					width: 100%
+					height: 68px
+					margin: 0
+					margin-bottom: 5px
+					background: rgba($color_4, 0.8)
+					border-radius: 100px
+					&:last-child
+						margin-bottom: 0
+					.img
+						flex: 0 0 50%
+						img
+							width: 35%
+					.p
+						flex: 0 0 47%
+						text-align: left
+						p
+							font-size: 16.88px
+							line-height: 21.09px
+							letter-spacing: 1px
+					&:after
+						top: 50%
+						right: 53%
+						height: 45px
+						transform: translate(-50%, -50%)
+					&:last-child
+						&:after
+							display: block
 
-/*==========  Desktop First Method  ==========*/
-@media only screen and (max-width : 768px)
+	// Внутренние страницы
+	.inner-page
+		background-size: 100% 152px
+		.container
+			.content
+				margin-top: 72px
+				padding-left: 8px
+				padding-right: 8px
+				padding-top: 36px
+				.row
+					main.page-center-column
+						left: 0
+						h1.inner-title
+							left: 15px
+							display: block
+							width: 95%
+							padding: 3px 24px
+							margin-bottom: 0
+							font-size: 15px
+							line-height: 27.25px
+							&::before
+								top: -5px
+								left: -35px
+						.filter
+							top: 0
+							margin-top: 15px
+							.filter-column
+								display: block
+							label
+								font-size: 13.24px
+								line-height: 22.58px
+								margin-bottom: 0
+							.select
+								height: 16px
+								margin-left: 5px
+								font-size: 13.24px
+								line-height: 22.58px
+								&-options
+									width: 100px
+									padding: 0
+									text-align: center
+							.select-styled::after
+								top: 8px
+								right: 60px
+								border-width: 0 1px 1px 0
+								padding: 2px
+						.box-pagination
+							margin-top: 39px
+							margin-bottom: 0
+							.pagination
+								width: 80%
+								li
+									padding: 0 15px
+									a
+										font-size: 17px
+										line-height: 29px
+				.news-line
+					.box
+						.title
+							font-size: 17.75px
+				.news-line-join
+					font-size: 15px
+					line-height: 25px
+				.news-line-stuff
+					margin-top: 15px
+				.primary-breadcrumbs
+					padding: 15px 0
+		footer
+			margin-top: -4px
+
+	// Страница "Новости"
+	.news-page
+		.news-line
+			margin-top: 15px
+			.box
+				flex-wrap: wrap
+				.img
+					flex: 0 0 100%
+					height: 200px
+					overflow: hidden
+					img
+						width: 100%
+				.text-part
+					flex: 0 0 100%
+					margin-top: 10px
+					.title
+						font-size: 19px
+						line-height: 21px
+					.data
+						font-size: 14px
+						line-height: 27px
+
+	// Страница "Новости Все"
+	.news-feed-page
+		.news-line
+			.box
+				.box-body
+					.box-item
+						.box-item-content
+							display: flex
+							justify-content: space-between
+							align-items: center
+							flex-wrap: wrap
+							span
+								flex: 0 0 60%
+								font-size: 16px
+							.link-share
+								flex: 0 0 30%
+								margin-left: 0
+								font-size: 14px
+							p
+								margin-top: 20px
+
+
+	.blog-page, .blog-inner-page, .experts-page, .experts-inner-page, .quiz-page, .search-page, .search-advert-page, .search-inner-page
+		.container
+			.content
+				margin-top: 0
+				padding-top: 10px
+
+	// Страница "Блог"
+	.blog-page
+		.news-line
+			.box
+				flex-wrap: wrap
+				.img
+					flex: 0 0 100%
+					img
+						width: 100%
+				.text-part
+					flex: 0 0 100%
+					padding-left: 0
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					align-items: center
+					margin-top: 15px
+					margin-bottom: 20px
+					.title
+						line-height: 24px
+					.data
+						flex: 0 0 50%
+						margin-bottom: 0
+					.box-more
+						position: relative
+						bottom: 0
+						flex: 0 0 50%
+						text-align: right
+					//.learn-more-link
+
+	.blog-inner-page
+		.news-line
+			.box-news
+				.box-body-head
+					height: 300px
+					margin-bottom: 30px
+					.image-block
+						flex: 0 0 100%
+						max-width: 96%
+						height: 200px
+					.text-block
+						flex: 0 0 100%
+						max-width: 96%
+						h3
+							margin-bottom: 30px
+							font-size: 20.75px
+							line-height: 25px
+						a
+							font-size: 15px
+			.news-line-form .title
+				font-size: 22px
+				margin-top: 15px
+			.box-comment .box-body
+				flex-wrap: wrap
+			.box-comment-image
+				flex: 0 0 100%
+				max-width: 100%
+				height: 200px
+				overflow: hidden
+				img
+					width: 100%
+			.box-comment-content
+				margin-top: 15px
+				margin-left: 0
+
+	// Страница "Експерты"
+	.experts-page
+		.news-line
+			.box
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				.img
+					flex: 0 0 100%
+					img
+						width: 100%
+				.text-part
+					flex: 0 0 100%
+					max-width: 100%
+					padding-left: 0
+					p.title
+						width: 100%
+						line-height: 24px
+
+	.experts-inner-page
+		.news-line
+			.box-body-head
+				height: 350px
+				flex-wrap: wrap
+				.image-block
+					flex: 0 0 100%
+					max-width: 100%
+					max-height: 200px
+					img
+						width: 100%
+				.text-block
+					flex: 0 0 100%
+					padding-left: 0
+					h3
+						font-size: 18px
+						line-height: 24px
+						margin-top: 0
+			.box-body
+				.text-content
+					h3.subtitle
+						margin: 15px 0
+					em
+						display: block
+						margin-top: 10px
+			.box-more-content
+				flex-wrap: wrap
+			.box-more-content-image
+				flex: 0 0 100%
+				max-height: 200px
+				img
+					width: 100%
+			.box-more-content-text
+				margin-top: 15px
+				padding-left: 0
+				h3
+					font-size: 16.75px
+					line-height: 24px
+		.box-more-title
+			font-size: 21px
+
+	.interactive-page
+		.news-line
+			.box-inner-items
+				margin-top: 15px
+			.box-inner-item
+				flex: 0 0 100%
+				max-width: 100%
+			.box-quiz
+				padding-top: 0
+			.box-quiz-content
+				flex-wrap: wrap
+				&-image
+					flex: 0 0 100%
+					max-width: 100%
+					max-height: 200px
+					img
+						width: 100%
+				&-text
+					margin-top: 15px
+					flex: 0 0 100%
+					max-width: 100%
+					padding-left: 0
+					h3
+						margin-bottom: 30px
+			.box-quiz-more-link
+				bottom: -10px
+
+	// Страница "Онлайн"
+	.online-page
+		h1.inner-title
+			max-height: 34px
+
+	// Страница "Опрос"
+	.quiz-page
+		.news-line
+			.box-body
+				.quiz-form-btn
+					margin: auto
+					margin-top: 15px
+
+	// Страница "Радио"
+	.radio-page
+		.news-line
+			.box
+				.box-body
+					iframe
+						height: 194px
+
+	// Страница "Поиск"
+	.search-page
+		.news-line
+			.box-content
+				flex-wrap: wrap
+				.img
+					flex: 0 0 100%
+					max-width: 100%
+					img
+						width: 100%
+				.text-part
+					padding-left: 0
+
+	// Страница "Поиск объявление"
+	.search-advert-page
+		.news-line
+			.box-form
+				.news-line-form
+					button[type="submit"]
+						width: 80%
+						margin: auto
+						font-size: 15px
+	.search-inner-page
+		.news-line
+			.box-body-head
+				flex-wrap: wrap
+				height: 300px
+				margin-bottom: 30px
+				.image-block
+					flex: 0 0 100%
+					max-width: 100%
+					img
+						width: 100%
+				.text-block
+					padding-left: 0
+			.box-content
+				flex-wrap: wrap
+				.img
+					flex: 0 0 100%
+					max-width: 100%
+					img
+						width: 100%
+				.text-part
+					flex: 0 0 100%
+					padding-left: 0
+					p.text
+						margin-top: 10px
+
+	// Страница "Соц. сети"
+	.socials-page
+		.news-line
+			margin-bottom: 30px
+			.box
+				.box-body-content
+					height: 500px
+
+	// Левая колонка
+	nav.page-left-column
+		display: none
+
+	// Правая колонка
+	aside.page-right-column
+		flex: 0 0 100%
+		max-width: 100%
+		margin-bottom: 0
+		padding: 0
+		.content-box
+			width: 100%
+			margin-bottom: 0
+			.heading
+				max-width: 95%
+				padding: 3px 0 3px 21px
+				margin-right: auto
+				font-size: 15px
+				line-height: 27.75px
+				margin-top: 23px
+				margin-bottom: 25px
+				&::before
+					top: -5px
+					left: -35px
+			.add_block
+				display: block
+				width: 100%
+				padding-bottom: 28px
+				a
+					flex: 0 0 100%
+				img.ad-image
+					display: block
+					width: 90%
+					//height: 251px
+					margin: auto
+				.alert_news
+					width: 230px
+					height: 53px
+					padding: 6px 0
+					margin-top: 21px
+					font-size: 15px
+					line-height: 35px
+					img
+						top: 3px
+						left: -8px
+						width: 20px
+					span
+						margin: 0
+			.tracing
+				display: block
+				.heading
+					max-width: 95%
+					padding: 3px 0 3px 21px
+					margin-right: auto
+					font-size: 15px
+					line-height: 27.75px
+					margin-top: 23px
+					margin-bottom: 25px
+					&::before
+						top: -5px
+						left: -35px
+				.small_box
+					margin-bottom: 25px
+					a
+						width: 115px
+						max-height: 103px
+						overflow: hidden
+					.text-part
+						margin-top: -1px
+						.title
+							font-size: 19px !important
+							line-height: 21px !important
+							text-transform: none
+						.data
+							margin-bottom: 0
+							font-size: 14px
+							line-height: 25px
+							margin-top: 11px
+				.learn_more
+					width: 90px
+					left: -5px
+					top: -6px
+					margin-top: 12px
+					margin-bottom: 15px
+					font-size: 14px
+					line-height: 25px
+					height: 30px
+					&::before
+						top: 12px
+						width: 118px
+						left: -125px
+					&::after
+						top: 12px
+						width: 124px
+						right: -133px
+				&.blogs
+					display: none
+			.quiz
+				padding-bottom: 25px
+				.heading
+					margin: 15px 0
+				.box
+					display: block
+					img
+						width: 100%
+					form
+						.title
+							margin-top: 10px
+							font-size: 19px
+							line-height: 25px
+						button.vote
+							height: 34px
+							font-size: 14.75px
+							line-height: 17px
+							width: 273px
+							margin: 0 auto
+							margin-top: 20px
+					.quiz-option
+						margin-left: 0
+						margin-top: 12px
+						li
+							label
+								font-size: 14.58px
+						.h
+							font-weight: 400
+
+	footer
+		margin-top: 32px
+		padding-top: 0
+		.container
+			display: block
+			padding: 0
+			ul
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				align-items: center
+				width: 90%
+				margin: 0 auto
+				margin-bottom: 9px
+				li
+					margin-right: 26px
+					a
+						font-size: 14.68px
+						line-height: 37.65px
+					&::after
+						right: -16px
+						height: 18px
+						top: 12px
+					//&:nth-child(2n)
+					//	&::after
+					//		display: none
+			.links
+				.box
+					width: 70%
+					margin: auto
+					a
+						margin-right: 20px
+						margin-left: 0
+						&:first-child
+							margin-left: 0
+				p
+					margin-top: 6px
+					font-size: 12.52px
+					line-height: 29.73px
+					text-align: center
+	.popup-modal
+		width: 325px
+		padding: 15px 20px
+		&__form
+			font-size: 14px
+			&__title
+				margin-bottom: 10px
+				font-size: 16px
+				line-height: 20px
+			&__input
+				margin-bottom: 5px
+				input
+					height: 30px
+					padding: 0 5px
+					font-size: 14px
+					line-height: 1.3
+					font-weight: 400
+			&__remember
+				margin: 10px 0 20px
+				label
+					flex: 0 0 63%
+					padding-left: 20px
+				a
+					flex: 0 0 37%
+					font-size: 13px
+				input[type="checkbox"]+label::before
+					width: 15px
+					height: 15px
+					margin-top: -6px
+				input[type="checkbox"]:checked+label::after
+					top: 3px
+					left: 1px
+			&__btn
+				width: 70%
+				margin: auto
+				margin-bottom: 20px
+				font-size: 14.75px
+				font-weight: 400
+				line-height: 30px
+				border-width: 1px
+		&__social
+			padding: 15px 10px
+			&::before,
+			&::after
+				left: -20px
+				width: 114%
+				height: 1px
+		&__title
+			font-size: 14px
+			margin-bottom: 15px
+		&__register
+			padding-top: 15px
+			&__link
+				width: 70%
+				margin: auto
+				margin-bottom: 20px
+				font-size: 14.75px
+				font-weight: 400
+				line-height: 30px
+				border-width: 1px
+			p
+				font-size: 13px
+
+
+// ########## max-width 768px ##########
+@media (max-width: 1366px) and (min-width : 768px)
 	header.main-header
 		height: 117px
 		.top-line
@@ -17,7 +721,7 @@
 				img
 					left: 0
 					top: 4px
-					width: 41px
+					width: 25%
 				span
 					display: none
 			&__logo
@@ -43,6 +747,26 @@
 				img
 					width: 34px
 					margin-left: 15px
+				&__list
+					top: 82px
+					right: 20px
+					width: 120px
+					li
+						padding: 15px
+						font-size: 25px
+			.popup-nav
+				top: -41px
+				left: 0
+				width: 620px
+				background-color: #2b98c0
+				&__list
+					padding-top: 100px
+					padding-left: 70px
+					li
+						font-size: 40.28px
+						line-height: 75.18px
+				&__sublist
+					padding-left: 30px
 
 	// Левая колонка
 	nav.page-left-column
@@ -101,42 +825,239 @@
 
 	// Внутренние страницы
 	.inner-page
-		.content
-			margin-top: 175px
-			padding-top: 0
+		.container
+			.content
+				margin-top: 170px
+				padding-top: 0
 		h1.inner-title
 			width: 400px
 		main.page-center-column
 			left: 0
-
-	// Правая колонка
-	aside.page-right-column
-		margin-bottom: 30px
-		padding: 0
-		.content-box
-			width: 100%
-			.add_block
-				display: flex
-				justify-content: space-between
-				align-items: center
-				flex-wrap: wrap
-				width: 90%
-				margin: auto
-				a
-					flex: 0 0 50%
-					&:last-child
-						flex: 0 0 46%
-				.alert_news
-					order: 2
+		.box-pagination
+			margin-top: 30px
+			margin-bottom: 43px
+			.pagination
+				max-width: 345px
+				li
+					padding: 0 18px
+					a
+						font-size: 25px
+		.news-line
+			.box
+				.title
+					font-size: 23.75px
+					line-height: 30px
+		footer
+			ul
+				margin-left: 20px
 
 	// Страница "Новости"
 	.news-page
 		.news-line
 			.box
 				.img
-					flex: 0 0 55%
+					flex: 0 0 42%
+					height: 280px
+					overflow: hidden
+					img
+						width: 100%
 				.text-part
-					flex: 0 0 43%
+					flex: 0 0 55%
+					.title
+						font-size: 24.01px
+						line-height: 33.3px
+					.data
+						font-size: 18.68px
+						font-weight: 600
+
+	// Страница "Блоги все"
+	.blog-page, .blog-inner-page, .experts-page, .experts-inner-page, .quiz-page, .search-page, .search-advert-page, .search-inner-page
+		.container
+			.content
+				margin-top: 20px
+
+	.blog-inner-page
+		.news-line
+			.box-news
+				.box-body-head
+					height: 200px
+					.text-block
+						h3
+							font-size: 25.75px
+							line-height: 40px
+						a
+							font-size: 18px
+					.image-block
+						img
+							width: 100%
+			.box-body .form p
+				font-size: 18px
+				line-height: 25px
+			.box-quiz
+				.quiz-form-input label
+					font-size: 16px
+				.quiz-form-btn
+					margin: auto
+					margin-top: 20px
+		.news-line-form button[type="submit"]
+			margin: auto
+			margin-top: 25px
+
+	// Страница "Експерты"
+	.experts-inner-page
+		.news-line
+			.box-body-head
+				height: 250px
+				.image-block
+					flex: 0 0 50%
+					max-width: 50%
+					max-height: 250px
+					img
+						width: 100%
+				.text-block
+					h3
+						font-size: 25.75px
+						font-weight: 600
+						line-height: 35px
+			.box-body
+				.text-content
+					h3.subtitle
+						margin: 15px 0
+					em
+						display: block
+						margin-top: 10px
+
+	// Страница "Интерактив"
+	.interactive-page
+		.news-line-form
+			padding-bottom: 40px
+			border-bottom: 3px solid #5e98bd
+			button[type="submit"]
+				margin: auto
+				margin-top: 25px
+
+	// Страница "Онлайн"
+	.online-page
+		h1.inner-title
+			width: 465px
+
+	// Страница "Поиск объявление"
+	.search-advert-page
+		.news-line
+			.box-form
+				.news-line-form
+					button[type="submit"]
+						margin: auto
+						margin-top: 30px
+
+	// Правая колонка
+	aside.page-right-column
+		flex: 0 0 100%
+		max-width: 100%
+		margin-bottom: 30px
+		padding: 0
+		.content-box
+			width: 100%
+			.heading
+				max-width: 378px
+				padding: 6px 0
+				padding-left: 45px
+				font-size: 24.4px
+				line-height: 31.55px
+			.add_block
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				width: 100%
+				margin: auto
+				a
+					flex: 0 0 50%
+					&:last-child
+						flex: 0 0 46%
+				.alert_news
+					flex: 0 0 57%
+					order: 2
+					height: 82px
+					margin-top: 37px
+					font-size: 21.75px
+					line-height: 74px
+					img
+						left: -20px
+						top: 6px
+						width: 30px
+			.tracing
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				.heading
+					flex: 0 0 100%
+					margin-top: 42px
+					margin-bottom: 37px
+				.small_box
+					flex: 0 0 50%
+					a
+						width: 110px
+						max-height: 110px
+					.text-part
+						.title
+							font-size: 21px !important
+							height: 43px
+							overflow: hidden
+				.learn_more
+					width: 140px
+					height: 45px
+					margin-top: 22px
+					font-size: 19px
+					line-height: 40px
+					border-radius: 30px
+					&::before
+						width: 283px
+						left: -294px
+						top: 23px
+					&::after
+						width: 279px
+						right: -303px
+						top: 23px
+			.quiz
+				padding-bottom: 35px
+				.heading
+					margin-top: 50px
+				.box
+					display: flex
+					justify-content: space-between
+					flex-wrap: wrap
+					a
+						flex: 0 0 42%
+					form
+						flex: 0 0 55%
+						.title
+							font-size: 20px
+							margin-top: 0
+						button.vote
+							margin-top: 20px
+							margin-left: -191px
+							height: 57px
+							font-size: 24px
+							line-height: 50.58px
+							width: 400px
+					.quiz-option
+						.h
+							font-weight: 600
+						li
+							label
+								font-size: 21px
+			.tracing.expert-mind
+				.heading
+					margin-bottom: 30px
+				.small_box
+					.text-part
+						max-width: 55%
+						.title
+							text-transform: none
+			.tracing.blogs
+				display: none
 
 	// Подвал
 	footer
@@ -147,7 +1068,7 @@
 			ul
 				top: 0
 				display: block
-				margin-bottom: 35px
+				margin-bottom: 25px
 				li
 					margin-right: 31px
 					&:first-child
@@ -156,402 +1077,123 @@
 						font-size: 22.68px
 						line-height: 46.55px
 					&::after
-						right: -11px
+						right: -18px
 						height: 27px
 						top: 12px
-			//.links
-			//	max-width: 100%
-			//	margin: auto
-			//	.box
-			//		display: flex
-			//		justify-content: flex-start
-			//		align-items: flex-start
-			//		max-width: 55%
-			//		margin: auto
-			//		a
-			//			flex: 0 0 calc(90% / 5)
-			//			margin-left: 0
-			//			&:first-child
-			//				margin-left: 0
-			//			//&:nth-child(1) img
-			//			//	width: 30px
-			//			//&:nth-child(2) img
-			//			//	width: 19px
-			//			//&:nth-child(3) img
-			//			//	width: 35px
-			//			//&:nth-child(4) img
-			//			//	width: 47px
-			//			//&:nth-child(5) img
-			//			//	width: 75px
-			//	p
-			//		font-size: 23.52px
-			//		line-height: 29.73px
-			//		text-align: center
-
-@media only screen and (max-width : 360px)
-	// Шапка сайта
-	header.main-header
-		background: rgba(#0083b3, 0.83)
-		height: 55px
-		//.header-container
-		//	padding: 0
-		.top-line
-			padding-top: 11px
-			&__link
-				top: 1px
-				left: -7px
-				img
-					top: 0
-					width: 19px
-					margin-right: 0
-				span
-					display: none
-			&__logo
-				position: relative
-				top: 4px
-				left: -77px
-				align-self: center
-				img
-					max-width: 166px
-					margin-left: 0
-			&__right
-				align-self: center
-				top: 2px
-				right: 13px
-				text-align: center
-			&__login
-				position: relative
-				left: -6px
-				img
-					width: 18px
-					margin-left: 0
-			&__lang
-				left: 13px
-				bottom: 0
-				span
-					font-size: 15px
-					line-height: 8.98px
-				img
-					width: 16px
-					margin-left: 0
-				&__list
-					top: 39px
-					right: -7px
-					width: 80px
-					li
-						padding: 5px
-						font-size: 15px
-			.popup-nav
-				top: -18px
-				left: 0
-				width: 300px
-				background: $color_4
-				&__list
-					padding: 50px 0 0 43px
-					li
-						font-size: 18.75px
-						line-height: 35px
-					&__item
-						margin-bottom: 12px
-						&--first
-							margin-bottom: 17px
-				&__sublist
-					margin-top: 8px
-					padding-left: 15px
-					&__item
-						font-size: 16.75px
-						margin-bottom: 0
-
-	// Главная страница
-	.main-page
-		background: url('../img/bg-main-page(small).png')
-		background-size: 100%
-		justify-content: flex-start
-		main
-			margin-bottom: 0
-		.container
-			h1
-				margin-top: 20px
-				margin-bottom: 0
-				font-size: 24.28px
-				line-height: 36px
-				letter-spacing: 3px
-			.main-logo
-				width: 80%
-				margin-top: 19px
-				margin-left: 0
-			.block
-				display: block
-				width: 90%
-				margin: auto
-				margin-top: 33px
-				.box
-					display: flex
-					align-items: center
-					width: 100%
-					height: 68px
-					margin: 0
-					margin-bottom: 5px
-					background: rgba($color_4, 0.8)
-					border-radius: 100px
-					&:last-child
-						margin-bottom: 0
-					.img
-						flex: 0 0 50%
-						img
-							width: 35%
-					.p
-						flex: 0 0 47%
-						text-align: left
-						p
-							font-size: 16.88px
-							line-height: 21.09px
-							letter-spacing: 1px
-					&:after
-						top: 50%
-						right: 53%
-						height: 45px
-						transform: translate(-50%, -50%)
-					&:last-child
-						&:after
-							display: block
-
-	// Внутренние страницы
-	.inner-page
-		background-size: 100% 152px
-		.content
-			margin-top: 72px
-			padding-left: 8px
-			padding-right: 8px
-			padding-top: 36px
-			.row
-				main.page-center-column
-					left: 0
-					h1.inner-title
-						left: 15px
-						display: block
-						width: 95%
-						padding: 3px 24px
-						margin-bottom: 0
-						font-size: 15px
-						line-height: 27.25px
-						&::before
-							top: -5px
-							left: -35px
-					.filter
-						top: 0
-						margin-top: 15px
-						.filter-column
-							display: block
-						label
-							font-size: 13.24px
-							line-height: 22.58px
-							margin-bottom: 0
-						.select
-							height: 16px
-							margin-left: 5px
-							font-size: 13.24px
-							line-height: 22.58px
-							&-options
-								width: 100px
-								padding: 0
-								text-align: center
-						.select-styled::after
-							top: 8px
-							right: 60px
-							border-width: 0 1px 1px 0
-							padding: 2px
-					.box-pagination
-						margin-top: 39px
-						margin-bottom: 0
-		footer
-			margin-top: -4px
-
-	// Страница "Новости"
-	.news-page
-		.news-line
-			margin-top: 15px
-			.box
-				flex-wrap: wrap
-				.img
-					flex: 0 0 100%
-					height: 200px
-					overflow: hidden
-					img
-						width: 100%
-				.text-part
-					flex: 0 0 100%
-					margin-top: 10px
-
-	// Страница "Блог"
-	.blog-page
-		.news-line
-			.box
-				.text-part
-					.data
-						margin-bottom: 25px
-
-	// Левая колонка
-	nav.page-left-column
-		display: none
-
-	// Правая колонка
-	aside.page-right-column
-		margin-bottom: 0
-		padding: 0
-		.content-box
-			width: 100%
-			margin-bottom: 0
-			.heading
-				max-width: 95%
-				padding: 3px 0 3px 21px
-				margin-right: auto
-				font-size: 15px
-				line-height: 27.75px
-				&::before
-					top: -5px
-					left: -35px
-			.add_block
-				display: block
-				width: 100%
-				padding-bottom: 28px
-				margin-bottom: 25px
-				a
-					flex: 0 0 100%
-				img.ad-image
-					display: block
-					width: 90%
-					height: 251px
-					margin: auto
-				.alert_news
-					width: 230px
-					height: 53px
-					padding: 6px 0
-					margin-top: 21px
-					font-size: 15px
-					line-height: 35px
-					img
-						top: 3px
-					span
-						margin: 0
-			.small_box
-				margin-top: 24px
-				a
-					width: 115px
-					max-height: 103px
-					overflow: hidden
-				.text-part
-					margin-top: -1px
-					.title
-						font-size: 17px !important
-						line-height: 19px !important
-						text-transform: none
-					.data
-						margin-bottom: 0
-						font-size: 14px
-						line-height: 25px
-						margin-top: 11px
-			.tracing
-				.learn_more
-					left: -5px
-					top: -6px
-					margin-top: 12px
-					margin-bottom: 15px
-					&::before
-						width: 118px
-						left: -125px
-					&::after
-						width: 124px
-						right: -133px
-				&.blogs
-					display: none
-			.quiz
-				margin-bottom: 26px
-				.box
-					margin-top: 18px
-					img
-						width: 100%
-					.title
-						margin-top: 10px
-					.quiz-option
-						margin-left: 0
-						margin-top: 12px
-						.h
-							font-weight: 400
-					.vote
-						height: 34px
-						font-size: 14.75px
-						line-height: 17px
-
-	footer
-		margin-top: 32px
-		padding-top: 0
-		.container
-			display: block
-			padding: 0
-			ul
-				display: flex
-				flex-wrap: wrap
-				justify-content: center
-				align-items: center
-				width: 90%
-				margin: 0 auto
-				margin-bottom: 9px
-				li
-					margin-left: 26px
-					margin-right: 0
-					&:first-child,
-					&:nth-child(3n)
-						margin-left: 0
-					a
-						font-size: 14.68px
-						line-height: 37.65px
-					&::after
-						right: -16px
-						height: 18px
-						top: 12px
-					&:nth-child(2n)
-						&::after
-							display: none
 			.links
 				.box
-					width: 70%
-					margin: auto
-					a
-						margin-right: 20px
+					display: flex
+					justify-content: center
+					align-items: center
+					a, a:first-child
 						margin-left: 0
-						&:first-child
-							margin-left: 0
+					a
+						margin-right: 25px
+						img
+							width: 100%
 				p
-					margin-top: 6px
-					font-size: 12.52px
+					margin-top: 20px
+					font-size: 18.52px
 					line-height: 29.73px
 					text-align: center
+	.popup-modal
+		width: 50%
+		padding: 15px 20px
+		&__form
+			font-size: 16px
+			&__title
+				margin-bottom: 20px
+				font-size: 20px
+				font-weight: 600
+				line-height: 20px
+			&__input
+				margin-bottom: 10px
+				input
+					height: 35px
+					padding: 0 10px
+					font-size: 16px
+					line-height: 1.3
+					font-weight: 600
+			&__remember
+				margin: 15px 0 25px
+				label
+					flex: 0 0 63%
+					padding-left: 25px
+				a
+					flex: 0 0 37%
+					font-size: 13px
+				input[type="checkbox"]+label::before
+					width: 17px
+					height: 17px
+					margin-top: -8px
+				input[type="checkbox"]:checked+label::after
+					top: 4px
+					left: 2px
+			&__btn
+				width: 80%
+				margin: auto
+				margin-bottom: 20px
+				font-size: 17.75px
+				font-weight: 600
+				line-height: 40px
+				border-width: 2px
+		&__social
+			padding: 25px 20px
+			&::before,
+			&::after
+				left: -19px
+				width: 111%
+				height: 2px
+		&__title
+			font-size: 16px
+			margin-bottom: 25px
+		&__register
+			padding-top: 15px
+			&__link
+				width: 80%
+				margin: auto
+				margin-bottom: 20px
+				font-size: 17.75px
+				font-weight: 600
+				line-height: 40px
+				border-width: 2px
+			p
+				font-size: 15px
 
-@media screen and (max-width: 1366px), screen and (max-height: 900px)
-	//.main-page
-	//	.container
-	//		h1
-	//			margin-top: 3vw
-	//			font-size: 34px
-	//		.main-logo
-	//			width: 33% !important
-	//			margin-top: 1.125em
-	//	.block
-	//		max-width: 70%
-	//		margin-top: 5vh
-	//		.box
-	//			margin-top: 0
-	//			.p
-	//				font-size: 0.9vw
-	//
-	//footer
-	//	.container
-	//		ul
-	//			li
-	//				a
-	//					font-size: 20px
-	//		.links
-	//			p
-	//				font-size: 15px
-	//				text-align: right
+
+@media (min-height: 750px) and (min-width: 1366px)
+	header.main-header
+		.top-line
+			.popup-nav
+				width: 250px
+				&__list
+					padding: 20px 0 0 40px
+					li
+						font-size: 16px
+					&__item
+						margin-bottom: 15px
+	.main-page
+		.container
+			h1
+				margin-top: 3vw
+				font-size: 34px
+			.main-logo
+				width: 33% !important
+				margin-top: 1.125em
+		.block
+			max-width: 70%
+			margin-top: 5vh
+			.box
+				margin-top: 0
+				.p
+					font-size: 0.9vw
+		footer
+			.container
+				ul
+					li
+						a
+							font-size: 20px
+				.links
+					p
+						font-size: 15px
+						text-align: right

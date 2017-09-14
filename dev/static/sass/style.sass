@@ -43,7 +43,7 @@ img
 
 // Левая колонка внутренних страниц
 @import "modules/_left-column"
-	
+
 // Правая колонка внутренних страниц
 @import "modules/_right-column"
 
@@ -137,12 +137,16 @@ img
 			align-items: center
 			margin-bottom: 30px
 			label
+				flex: 0 0 65%
 				position: relative
 				padding-left: 30px
 				color: $color_7
 			a
+				display: block
+				flex: 0 0 35%
 				font-size: 16.67px
 				color: $color_4
+				text-align: right
 			input[type="checkbox"]
 				display: none
 				&+label
@@ -171,14 +175,17 @@ img
 						&::after
 							content: ''
 							position: absolute
-							left: 5px
-							top: 15px
-							background: white
-							width: 2px
-							height: 2px
-							box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
-							-webkit-transform: rotate(45deg)
-							transform: rotate(45deg)
+							left: 4px
+							top: 8px
+							width: 13px
+							height: 13px
+							background: url('../img/icons/check.png') no-repeat
+							//background: white
+							//width: 2px
+							//height: 2px
+							//box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
+							//-webkit-transform: rotate(45deg)
+							//transform: rotate(45deg)
 		&__btn
 			-webkit-box-sizing: border-box
 			-moz-box-sizing: border-box

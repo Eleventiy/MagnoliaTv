@@ -5,8 +5,6 @@
 		.content
 			margin-top: 0
 	.news-line
-		margin-top: 17px
-		margin-bottom: 20px
 		.box
 			position: relative
 			padding: 15px 0
@@ -50,8 +48,26 @@
 			&-content
 				display: inline-flex
 				justify-content: space-between
-				.img
+				figure
+					position: relative
 					max-width: 245px
+					margin: 0
+					transition: .25s ease-in-out
+					&:hover
+						opacity: .7
+					figcaption
+						position: absolute
+						left: 0
+						bottom: 6px
+						width: 100%
+						background: $color_7
+						text-align: center
+						span
+							color: $color_1
+							font-size: 14.58px
+							font-weight: 600
+							line-height: 35px
+							text-transform: uppercase
 				.text-part
 					flex: 1
 					padding-left: 17px
@@ -83,35 +99,8 @@
 						font-weight: 300
 						line-height: 25px
 						margin-bottom: 22px
-		.box.last
-			border-bottom: 3px solid #5e98bd
-		.box-pagination
-			margin-top: 41px
-			margin-bottom: 20px
-			text-align: center
-			.pagination
-				max-width: 225px
-				margin: auto
-				.active
-					color: $color_7
-					a
-						color: $color_7
-				li
-					font-size: 17px
-					font-family: $font_family_1
-					font-weight: 600
-					color: $color_10
-					padding: 0 12.3px
-					&:hover
-						color: $color_7
-						a
-							color: $color_7
-					a
-						font-size: 17px
-						font-family: $font_family_1
-						font-weight: 600
-						color: $color_10
-						text-decoration: none
+
+
 	.select-styled::after
 		right: 30px
 	aside.page-right-column

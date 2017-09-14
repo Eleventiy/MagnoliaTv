@@ -17,8 +17,9 @@
               <!-- Всплывающее меню-->
               <nav class="popup-nav" id="topNav">
                 <ul class="popup-nav__list">
-                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="#">Про нас</a></li>
-                  <li class="popup-nav__list__item"><a href="news.html">Стрічка новин</a>
+                  <!--li.popup-nav__list__item.popup-nav__list__item--first-->
+                  <!--	a(href='#') Про нас-->
+                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="news.html">Стрічка новин</a>
                     <ul class="popup-nav__sublist">
                       <li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
@@ -32,7 +33,7 @@
                     <ul class="popup-nav__sublist">
                       <li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
-                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтерв'ю</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
                       <li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
                     </ul>
@@ -66,24 +67,28 @@
       <!-- Контентная часть-->
       <main>
         <div class="container index-container">
-          <h1>МУЛЬТИМЕДІЙНА ПЛАТФОРМА</h1><img class="main-logo" src="static/img/logo-main.png" width="486" height="210" alt="Основной логотип">
-          <div class="block"><a class="box" href="news.html">
-              <div class="img"><img src="static/img/icons/news.png" width="79" height="87" alt="Иконка новости"></div>
-              <div class="p">
-                <p>стрічка новин</p>
-              </div></a><a class="box" href="javascript:void(0);">
-              <div class="img"><img src="static/img/icons/camera.png" width="143" height="56" alt="Иконка телеканал"></div>
-              <div class="p">
-                <p>телеканал ЧП.INFO</p>
-              </div></a><a class="box" href="javascript:void(0);">
-              <div class="img"><img src="static/img/icons/radio.png" width="97" height="95" alt="Иконка радио"></div>
-              <div class="p">
-                <p>радіо магнолія</p>
-              </div></a><a class="box" href="javascript:void(0);">
-              <div class="img"><img src="static/img/icons/interactive.png" width="162" height="82" alt="Иконка интерактив"></div>
-              <div class="p">
-                <p>інтерактив</p>
-              </div></a></div>
+          <div class="row">
+            <div class="col-12">
+              <h1>МУЛЬТИМЕДІЙНА ПЛАТФОРМА</h1><img class="main-logo" src="static/img/logo-main.png" width="486" height="210" alt="Основной логотип">
+              <div class="block"><a class="box" href="news.html">
+                  <div class="img"><img src="static/img/icons/news.png" width="79" height="87" alt="Иконка новости"></div>
+                  <div class="p">
+                    <p>стрічка новин</p>
+                  </div></a><a class="box" href="online.html">
+                  <div class="img"><img src="static/img/icons/camera.png" width="143" height="56" alt="Иконка телеканал"></div>
+                  <div class="p">
+                    <p>телеканал ЧП.INFO</p>
+                  </div></a><a class="box" href="radio.html">
+                  <div class="img"><img src="static/img/icons/radio.png" width="97" height="95" alt="Иконка радио"></div>
+                  <div class="p">
+                    <p>радіо магнолія</p>
+                  </div></a><a class="box" href="interactive.html">
+                  <div class="img"><img src="static/img/icons/interactive.png" width="162" height="82" alt="Иконка интерактив"></div>
+                  <div class="p">
+                    <p>інтерактив</p>
+                  </div></a></div>
+            </div>
+          </div>
         </div>
       </main>
       <!-- Основной подвал-->
@@ -124,7 +129,7 @@
           <div class="popup-modal__social__links"><a class="popup-modal__social__link popup-modal__social__link--rss" href="javasrcipt:void(0);">RSS</a><a class="popup-modal__social__link popup-modal__social__link--fb" href="javasrcipt:void(0);">Facebook</a><a class="popup-modal__social__link popup-modal__social__link--tw" href="javasrcipt:void(0);">Twitter</a><a class="popup-modal__social__link popup-modal__social__link--google" href="javasrcipt:void(0);">Google+</a><a class="popup-modal__social__link popup-modal__social__link--youtube" href="javasrcipt:void(0);">Youtube</a></div>
         </div>
         <div class="popup-modal__register"><b class="popup-modal__title">Немає облікового запису?</b><a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
-          <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте<a href="javasrcipt:void(0);">Умови угоди</a></p>
+          <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте &nbsp;<a href="javasrcipt:void(0);">Умови угоди</a></p>
         </div>
       </div>
       <!-- Подложка модального окна-->

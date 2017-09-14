@@ -8,7 +8,7 @@ aside.page-right-column
 		color: $color_1
 		text-transform: uppercase
 		font-family: $font_family_1
-		background: #5d97bd
+		background: $color_4
 		border-radius: 0 30px 30px 0
 		position: relative
 		left: 16px
@@ -142,7 +142,7 @@ aside.page-right-column
 					margin-left: -3px
 					.h
 						padding-left: 0
-						color: $color_4
+						color: $color_9
 						cursor: default
 					li
 						display: block
@@ -162,7 +162,7 @@ aside.page-right-column
 							margin-bottom: 12px
 							z-index: 9
 							cursor: pointer
-							-webkit-transition: all 0.25s linear
+							transition: 0.25s linear
 						.check
 							display: block
 							position: absolute
@@ -175,7 +175,6 @@ aside.page-right-column
 							margin-top: -8px
 							z-index: 5
 							transition: border .25s linear
-							-webkit-transition: border .25s linear
 							&::before
 								content: ''
 								font-size: 12px
@@ -196,6 +195,7 @@ aside.page-right-column
 								color: $color_1
 								background: none
 				.vote
+					box-sizing: border-box
 					margin: auto
 					display: block
 					width: 273px

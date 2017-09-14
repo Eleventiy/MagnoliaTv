@@ -17,8 +17,9 @@
               <!-- Всплывающее меню-->
               <nav class="popup-nav" id="topNav">
                 <ul class="popup-nav__list">
-                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="#">Про нас</a></li>
-                  <li class="popup-nav__list__item"><a href="news.html">Стрічка новин</a>
+                  <!--li.popup-nav__list__item.popup-nav__list__item--first-->
+                  <!--	a(href='#') Про нас-->
+                  <li class="popup-nav__list__item popup-nav__list__item--first"><a href="news.html">Стрічка новин</a>
                     <ul class="popup-nav__sublist">
                       <li class="popup-nav__sublist__item"><a href="news-feed.html">правозахист</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-feed.html">події</a></li>
@@ -32,7 +33,7 @@
                     <ul class="popup-nav__sublist">
                       <li class="popup-nav__sublist__item"><a href="news-video.html">відеоновини</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-video.html">спецрепортаж</a></li>
-                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтервью</a></li>
+                      <li class="popup-nav__sublist__item"><a href="news-video.html">інтерв'ю</a></li>
                       <li class="popup-nav__sublist__item"><a href="news-video.html">відкритим текстом</a></li>
                       <li class="popup-nav__sublist__item"><a href="online.html">онлайн трансляція</a></li>
                     </ul>
@@ -102,7 +103,7 @@
               <div class="search-box">
                 <form action="#" method="post">
                   <div class="search">
-                    <input type="text" placeholder="Поиск">
+                    <input type="text" placeholder="Пошук">
                     <button class="search-submit-btn" type="submit"></button>
                   </div>
                 </form>
@@ -115,8 +116,8 @@
               <div class="news-line">
                 <div class="box">
                   <div class="box-body">
-                    <iframe height="300" allowfullscreen="" src="https://www.svoboda.org/embed/player/0/28707696.html?type=video"></iframe>
-                    <!-- <iframe height="300" allowfullscreen src="https://www.youtube.com/embed/mmVCm4OkkZk"></iframe>-->
+                    <iframe frameborder="0" scrolling="no" width="100%" height="300" allowfullscreen="" src="https://www.svoboda.org/embed/player/0/28706163.html?type=audio"></iframe>
+                    <!--iframe(height='300', allowfullscreen='', src='https://www.svoboda.org/embed/player/0/28707696.html?type=video')-->
                     <div class="box-body-content">
                       <div class="ether-now">
                         <h2 class="title">Зараз в ефірі:</h2>
@@ -207,6 +208,11 @@
                     <div class="text-part"><a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
                       <p class="data">06.07.2017 17:30</p>
                     </div>
+                  </div>
+                  <div class="small_box"><a href="news-photo.html"><img src="static/img/sidebar/news-line_photo.png" width="243" height="218" alt="Фото новости"></a>
+                    <div class="text-part"><a class="title" href="news-photo.html">На Київщині зникла 14-річна Крістіна</a>
+                      <p class="data">06.07.2017 17:30</p>
+                    </div>
                   </div><a class="learn_more" href="news-feed.html">Більше</a>
                 </div>
                 <div class="quiz">
@@ -244,6 +250,11 @@
                 </div>
                 <div class="tracing expert-mind">
                   <p class="heading">Думка експертів</p>
+                  <div class="small_box"><a href="experts-inner.html"><img src="static/img/sidebar/news-line_photo.png" width="243" height="218" alt="Фото новости"></a>
+                    <div class="text-part">
+                      <p class="title">Валентин Гладких Кандидат філософських наук</p><a class="data text" href="experts-inner.html">Чи зможе суд довести держзраду Януковича?</a>
+                    </div>
+                  </div>
                   <div class="small_box"><a href="experts-inner.html"><img src="static/img/sidebar/news-line_photo.png" width="243" height="218" alt="Фото новости"></a>
                     <div class="text-part">
                       <p class="title">Валентин Гладких Кандидат філософських наук</p><a class="data text" href="experts-inner.html">Чи зможе суд довести держзраду Януковича?</a>
@@ -321,7 +332,7 @@
           <div class="popup-modal__social__links"><a class="popup-modal__social__link popup-modal__social__link--rss" href="javasrcipt:void(0);">RSS</a><a class="popup-modal__social__link popup-modal__social__link--fb" href="javasrcipt:void(0);">Facebook</a><a class="popup-modal__social__link popup-modal__social__link--tw" href="javasrcipt:void(0);">Twitter</a><a class="popup-modal__social__link popup-modal__social__link--google" href="javasrcipt:void(0);">Google+</a><a class="popup-modal__social__link popup-modal__social__link--youtube" href="javasrcipt:void(0);">Youtube</a></div>
         </div>
         <div class="popup-modal__register"><b class="popup-modal__title">Немає облікового запису?</b><a class="popup-modal__register__link" href="javasrcipt:void(0);">Реєстрація</a>
-          <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте<a href="javasrcipt:void(0);">Умови угоди</a></p>
+          <p>Натискаючи на кнопку входу через соцмережу, ви приймаєте &nbsp;<a href="javasrcipt:void(0);">Умови угоди</a></p>
         </div>
       </div>
       <!-- Подложка модального окна-->
